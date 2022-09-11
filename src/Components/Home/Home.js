@@ -11,14 +11,14 @@ import Footer from '../Share/Footer/Footer';
 const Home = () => {
     return (
         <div>
-            <Navbar/>
-            <Carousel/>
-            <RentalCleaningService/>
-            <BlogPage/>
-            <WhyChoose/>
-            <Client/>
-            <Post/>
-            <Footer/>
+            <Navbar />
+            <Carousel />
+            <RentalCleaningService />
+            <BlogPage />
+            <WhyChoose />
+            <Client />
+            <Post />
+            <Footer />
         </div>
     );
 };
