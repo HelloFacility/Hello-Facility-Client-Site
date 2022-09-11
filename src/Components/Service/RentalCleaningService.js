@@ -5,7 +5,7 @@ import CleaningServiceBanner from '../../Images/CleaningBanner.jpg'
 const RentalCleaningService = () => {
     return (
         <div className="md:mx-auto md:container px-4">
-            <div className="pt-10 md:pt-40">
+            <div className="pt-10">
                 <div className="container mx-auto">
                     <div className="flex flex-wrap items-center pb-12">
                         <div className="md:w-1/2 lg:w-1/2 mx-auto w-full xl:pr-20 md:pr-6">

@@ -5,7 +5,7 @@ import Logo from '../../../Images/ColorLogo.png'
 const Footer = () => {
     return (
         <div>
-            <div className>
+            <div>
                 <div className="relative flex justify-start md:justify-center md:items-end ">
                     <img className="absolute object-cover h-full w-full xl:mt-10 z-0" src={FooterImg} alt="background" />
                     <div className="flex pt-36 md:pt-32 lg:pt-40 xl:pt-56 px-4 md:px-6  xl:px-20 flex-col justify-start items-start md:justify-center md:items-center relative z-10">
