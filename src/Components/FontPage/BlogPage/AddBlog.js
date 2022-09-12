@@ -10,7 +10,7 @@ const AddBlog = () => {
                 <div>
                     <button
                         onClick={() => setShow(!show)}
-                        className="flex items-center gap-2 bg-blue-500 py-2 px-4 text-white font-bold rounded  hover:bg-white hover:text-blue-500 hover:outline-1 hover:border hover:border-blue-500 hover: shadow-green-200 hover: shadow-sm"
+                        className="flex items-center gap-2 px-4 py-2 font-bold text-white bg-blue-500 rounded shadow-sm hover:bg-white hover:text-blue-500 hover:outline-1 hover:border hover:border-blue-500 hover: shadow-green-200"
                     >
                         Add Blog
                     </button>{" "}
@@ -19,7 +19,7 @@ const AddBlog = () => {
                 {show ? (
                     <div className="mt-6">
                         <form>
-                            <section className="md:w-3/6 mx-auto bg-white shadow-gray-300 border shadow-md rounded py-4 px-6 mb-8">
+                            <section className="px-6 py-4 mx-auto mb-8 bg-white border rounded shadow-md md:w-3/6 shadow-gray-300">
 
                                 <div className='flex gap-4'>
                                     <select
@@ -27,7 +27,7 @@ const AddBlog = () => {
                                         name="TextField"
                                         {...register("TextField")}
                                         id=""
-                                        className="py-1 pl-3 w-3/12 my-1 border border-gray-300 bg-slate-50 rounded outline-none"
+                                        className="w-3/12 py-1 pl-3 my-1 border border-gray-300 rounded outline-none bg-slate-50"
                                     >
                                         <option value="" selected disabled>
                                             Select Text
@@ -39,16 +39,16 @@ const AddBlog = () => {
                                         <option value="H5">H5</option>
                                         <option value="H6">H6</option>
                                     </select>
-                                    <button className='py-1 pl-3 w-3/12 my-1 border border-gray-300 bg-slate-50 rounded outline-none'>Paragraph</button>
-                                    <button className='py-1 pl-3 w-3/12 my-1 border border-gray-300 bg-slate-50 rounded outline-none'>Hyperlink</button>
-                                    <button className='py-1 pl-3 w-3/12 my-1 border border-gray-300 bg-slate-50 rounded outline-none'>image</button>
+                                    <button className='w-3/12 py-1 pl-3 my-1 border border-gray-300 rounded outline-none bg-slate-50'>Paragraph</button>
+                                    <button className='w-3/12 py-1 pl-3 my-1 border border-gray-300 rounded outline-none bg-slate-50'>Hyperlink</button>
+                                    <button className='w-3/12 py-1 pl-3 my-1 border border-gray-300 rounded outline-none bg-slate-50'>image</button>
                                 </div>
                                 <br />
                                 <br />
                                 <div className="flex justify-center mt-2">
                                     <button
                                         type="submit"
-                                        className="flex items-center gap-2 bg-blue-600 py-2 px-6 text-white font-bold rounded  hover:bg-white hover:text-blue-600 hover:outline-1 hover:border hover:border-blue-600 hover: shadow-blue-300 hover: shadow-sm"
+                                        className="flex items-center gap-2 px-6 py-2 font-bold text-white bg-blue-600 rounded shadow-sm hover:bg-white hover:text-blue-600 hover:outline-1 hover:border hover:border-blue-600 hover: shadow-blue-300"
                                     >
                                         Post
                                     </button>{" "}
