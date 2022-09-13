@@ -36,18 +36,27 @@ const Navbar = () => {
                 </div>
                 <div className="hidden navbar-center lg:flex">
                     <ul className="p-0 menu menu-horizontal">
-                        <li><a>Item 1</a></li>
+                        <li><a>Home</a></li>
                         <li tabindex="0">
                             <a>
-                                Parent
+                                Service
                                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
                             </a>
-                            <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
+                            <ul className="p-2   bg-white text-black">
+                                <div className=''>
+                                    <li><a>Cleaning Service</a></li>
+                                    <li><a>Car Rental</a></li>
+                                    <li><a>Building Management Solution</a></li>
+                                    <li><a>Stationary Supply</a></li>
+                                    <li><a>Pest Cpntrol</a></li>
+                                    <li><a>Gardening</a></li>
+                                </div>
                             </ul>
                         </li>
-                        <li><a>Item 3</a></li>
+                        <li><a>Client</a></li>
+                        <li><a>Gallery</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact Us</a></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
