@@ -3,7 +3,7 @@ import logo from '../../../Images/ColorLogo.png';
 
 const Navbar = () => {
     return (
-        <div className='mx-16 '>
+        <div className='lg:mx-16'>
             <div className="navbar bg-base-100">
                 <div className="justify-between mr-11 navbar-start">
                     <div className="dropdown">
@@ -22,7 +22,7 @@ const Navbar = () => {
                                     <li><a>Car Rental</a></li>
                                     <li><a>Building Management Solution</a></li>
                                     <li><a>Stationary Supply</a></li>
-                                    <li><a>Pest Cpntrol</a></li>
+                                    <li><a>Pest Control</a></li>
                                     <li><a>Gardening</a></li>
                                 </ul>
                             </li>
@@ -32,7 +32,7 @@ const Navbar = () => {
                             <li><a>Contact Us</a></li>
                         </ul>
                     </div>
-                    <img className='' src={logo} alt="/" />
+                    <img className='w-2/3' src={logo} alt="/" />
                 </div>
                 <div className="hidden navbar-center lg:flex">
                     <ul className="p-0 menu menu-horizontal">
@@ -42,13 +42,13 @@ const Navbar = () => {
                                 Service
                                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
                             </a>
-                            <ul className="p-2   bg-white text-black">
-                                <div className=''>
+                            <ul className="p-2 bg-white text-black">
+                                <div className='flex'>
                                     <li><a>Cleaning Service</a></li>
                                     <li><a>Car Rental</a></li>
                                     <li><a>Building Management Solution</a></li>
                                     <li><a>Stationary Supply</a></li>
-                                    <li><a>Pest Cpntrol</a></li>
+                                    <li><a>Pest Control</a></li>
                                     <li><a>Gardening</a></li>
                                 </div>
                             </ul>
