@@ -4,10 +4,10 @@ import logo from '../../../Images/ColorLogo.png';
 
 const Navbar = () => {
     return (
-        <div className='lg:mx-16 '>
+        <div className=' lg:mx-16'>
             <div className="navbar bg-base-100">
                 <div className="justify-between mr-11 navbar-start">
-                    <div className="dropdown">
+                    <div className=" dropdown">
                         <label tabindex="0" className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
@@ -125,7 +125,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Get started</a>
+                    <a className="btn">Sign In/Sign Up</a>
                 </div>
             </div>
         </div>
