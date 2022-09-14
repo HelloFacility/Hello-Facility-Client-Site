@@ -27,9 +27,12 @@ const AddBlog = () => {
   const handle_remove = (value) => {
     console.log("value", fields[value]?.name);
     const newData = fields.filter((el) => el?.name !== fields[value]?.name);
-    setFields(newData)
-    
+    setFields(newData);
   };
+  
+  // const CustomTag = `${field?.type}`;
+  // return <CustomTag>{field?.name}</CustomTag>;
+  // String.substr(1, String.length);
 
   return (
     <div>
@@ -51,7 +54,6 @@ const AddBlog = () => {
                   <select
                     required
                     name="TextField"
-                    // {...register("TextField")}
                     onChange={(e) => handle_field(e.target.value, "h")}
                     id=""
                     className="py-1 pl-3 w-3/12 my-1 border border-gray-300 bg-slate-50 rounded outline-none"
@@ -98,28 +100,19 @@ const AddBlog = () => {
                         <div key={i} className="flex flex-col">
                           <label htmlFor={field?.type}>{field?.type}</label>
                           <input
+                            {...register(`${field?.name}`)}
                             type={field?.type === "img" ? "file" : "text"}
                             className={`border border-red-500`}
                           />
                         </div>
-                        <div onClick={() => handle_remove(i)} className="cursor-pointer">Close</div>
+                        <div
+                          onClick={() => handle_remove(i)}
+                          className="cursor-pointer"
+                        >
+                          Close
+                        </div>
                       </span>
                     );
-                    // if (field?.img) {
-                    //   const CustomTag = `${field?.type}`;
-                    //   return (
-                    //     <>
-                    //       <label htmlFor={field?.type}>
-                    //         <input
-                    //           type={field?.type === "img" ? "file" : "text"}
-                    //         />
-                    //       </label>
-                    //     </>
-                    //   );
-                    // } else {
-                    //   const CustomTag = `${field?.type}`;
-                    //   return <CustomTag>{field?.name}</CustomTag>;
-                    // }
                   })}
                 </div>
 
