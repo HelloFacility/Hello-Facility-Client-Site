@@ -1,8 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import AdditionalBlog from './Components/AdditionalPage/AdditionalBlog';
+import AdditionalClient from './Components/AdditionalPage/AdditionalClient';
+import AdditionalGallery from './Components/AdditionalPage/AdditionalGallery';
+import ContactUs from './Components/AdditionalPage/ContactUs';
 import SignIn from './Components/Authentication/SignIn';
 import SignUp from './Components/Authentication/SignUp';
 import AddBlog from './Components/FontPage/BlogPage/AddBlog';
+import Client from './Components/FontPage/Client/Client';
 import BuildingManagementSolution from './Components/FontPage/SubMenuPage/BuildingManagementSolution/BuildingManagementSolution';
 import MonthlyCarRental from './Components/FontPage/SubMenuPage/CarRental/MonthlyCarRental';
 import OnDemandService from './Components/FontPage/SubMenuPage/CarRental/OnDemandService';
@@ -49,6 +54,11 @@ function App() {
         <Route path='/Gardening' element={<Gardening/>}></Route>
         <Route path='/signIn' element={<SignIn/>}></Route>
         <Route path='/register' element={<SignUp/>}></Route>
+        <Route path='/additionalClient' element={<AdditionalClient/>}></Route>
+        <Route path='/additionalGallery' element={<AdditionalGallery/>}></Route>
+        <Route path='/additionalBlog' element={<AdditionalBlog/>}></Route>
+        <Route path='/contactUs' element={<ContactUs/>}></Route>
+        
         
       </Routes>
     </div>
