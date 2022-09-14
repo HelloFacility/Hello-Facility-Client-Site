@@ -18,47 +18,49 @@ const Navbar = () => {
                                     Service
                                     <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
                                 </a>
-                                <ul className="text-black bg-white">
+                                <ul className="text-black absolute bg-gray-50">
                                     <div >
                                         <div>
                                             <li>
-                                                <Link className='font-bold' to='/cleaningService'>Cleaning Service</Link>
-                                                <p><small>Commercial Cleaning Service</small></p>
-                                                <p><small>Regular Office Cleaning</small></p>
-                                                <p><small>Carpet Cleaning</small></p>
-                                                <p><small>Sofa Cleaning</small></p>
-                                                <p><small>Kitchen Cleaning</small></p>
-                                                <p><small>Bathroom Cleaning</small></p>
+                                                <h2 className='font-bold'>Cleaning Service</h2>
+                                                <Link to='/commercialCleaningService'>Commercial Cleaning Service</Link>
+                                                <Link to='/regularOfficeCleaning'>Regular Office Cleaning</Link>
+                                                <Link to='/carpetCleaning'>Carpet Cleaning</Link>
+                                                <Link to='/sofaCleaning'>Sofa Cleaning</Link>
+                                                <Link to='/kitchenCleaning'>Kitchen Cleaning</Link>
+                                                <Link to='/bathroomCleaning'>Bathroom Cleaning</Link>
                                             </li>
                                         </div>
                                         <div>
                                             <li>
-                                                <Link className='font-bold' to='/pestControl'>Pest Control</Link>
-                                                <p><small>Cockroach Control</small></p>
-                                                <p><small>Rodent Control</small></p>
-                                                <p><small>Termite Control</small></p>
-                                                <p><small>Ant Control</small></p>
-                                                <p><small>Fumigation Service</small></p>
-                                                <p><small>Wood Borer</small></p>
+                                                <h2 className='font-bold'>Pest Control</h2>
+                                                <Link to='/cockroachControl'>Cockroach Control</Link>
+                                                <Link to='/rodentControl'>Rodent Control</Link>
+                                                <Link to='/termiteControl'>Termite Control</Link>
+                                                <Link to='/antControl'>Ant Control</Link>
+                                                <Link to='/fumigationService'>Fumigation Service</Link>
+                                                <Link to='/woodBorer'>Wood Borer</Link>
                                             </li>
                                         </div>
 
                                         <div>
                                             <li>
-                                                <Link className='font-bold' to='/carRental' >Car Rental</Link>
-                                                <p><small>Monthly Car Rental</small></p>
-                                                <p><small>On Demand Service</small></p>
-                                                <p><small>Weeding Car Rental</small></p>
+                                                <h2 className='font-bold'>Car Rental</h2>
+                                                <Link to='/monthlyCarRental'>Monthly Car Rental</Link>
+                                                <Link to='/onDemandService'>On Demand Service</Link>
+                                                <Link to='/weedingCarRental'>Weeding Car Rental</Link>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li>
+                                                <Link className='font-semibold' to='/buildingManagement'>Building Management Solution</Link>
+                                                <Link className='font-semibold' to='/stationarySupply'>Stationary Supply</Link>
+                                                <Link className='font-semibold' to='/gardening'>Gardening</Link>
                                             </li>
                                         </div>
 
                                     </div>
-                                    <li><Link className='font-bold' to='/buildingManagement'>Building Management Solution</Link></li>
-                                    <li><Link className='font-bold' to='/stationarySupply'>Stationary Supply</Link></li>
-                                    <li><Link className='font-bold' to='/gardening'>Gardening</Link></li>
                                 </ul>
-
-
                             </li>
                             <li><Link to='/client'>Client</Link></li>
                             <li><Link to='/gallery'>Gallery</Link></li>
@@ -76,47 +78,48 @@ const Navbar = () => {
                                 Service
                                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
                             </a>
-                            <ul className="p-2 text-black bg-white">
+                            <ul className="p-2 text-black absolute bg-gray-50">
                                 <div className='flex'>
                                     <div>
                                         <li>
-                                            <Link className='font-bold' to='/cleaningService'>Cleaning Service</Link>
-                                            <p><small>Commercial Cleaning Service</small></p>
-                                            <p><small>Regular Office Cleaning</small></p>
-                                            <p><small>Carpet Cleaning</small></p>
-                                            <p><small>Sofa Cleaning</small></p>
-                                            <p><small>Kitchen Cleaning</small></p>
-                                            <p><small>Bathroom Cleaning</small></p>
+                                            <h2 className='font-bold'>Cleaning Service</h2>
+                                            <Link to='/commercialCleaningService'>Commercial Cleaning Service</Link>
+                                            <Link to='/regularOfficeCleaning'>Regular Office Cleaning</Link>
+                                            <Link to='/carpetCleaning'>Carpet Cleaning</Link>
+                                            <Link to='/sofaCleaning'>Sofa Cleaning</Link>
+                                            <Link to='/kitchenCleaning'>Kitchen Cleaning</Link>
+                                            <Link to='/bathroomCleaning'>Bathroom Cleaning</Link>
                                         </li>
                                     </div>
                                     <div>
                                         <li>
-                                            <Link className='font-bold' to='/pestControl'>Pest Control</Link>
-                                            <p><small>Cockroach Control</small></p>
-                                            <p><small>Rodent Control</small></p>
-                                            <p><small>Termite Control</small></p>
-                                            <p><small>Ant Control</small></p>
-                                            <p><small>Fumigation Service</small></p>
-                                            <p><small>Wood Borer</small></p>
+                                            <h2 className='font-bold'>Pest Control</h2>
+                                            <Link to='/cockroachControl'>Cockroach Control</Link>
+                                            <Link to='/rodentControl'>Rodent Control</Link>
+                                            <Link to='/termiteControl'>Termite Control</Link>
+                                            <Link to='/antControl'>Ant Control</Link>
+                                            <Link to='/fumigationService'>Fumigation Service</Link>
+                                            <Link to='/woodBorer'>Wood Borer</Link>
                                         </li>
                                     </div>
 
                                     <div>
                                         <li>
-                                            <Link className='font-bold' to='/carRental' >Car Rental</Link>
-                                            <p><small>Monthly Car Rental</small></p>
-                                            <p><small>On Demand Service</small></p>
-                                            <p><small>Weeding Car Rental</small></p>
+                                            <h2 className='font-bold'>Car Rental</h2>
+                                            <Link to='/monthlyCarRental'>Monthly Car Rental</Link>
+                                            <Link to='/onDemandService'>On Demand Service</Link>
+                                            <Link to='/weedingCarRental'>Weeding Car Rental</Link>
                                         </li>
                                     </div>
-
+                                    <div>
+                                        <li>
+                                            <Link className='font-semibold' to='/buildingManagement'>Building Management Solution</Link>
+                                            <Link className='font-semibold' to='/stationarySupply'>Stationary Supply</Link>
+                                            <Link className='font-semibold' to='/gardening'>Gardening</Link>
+                                        </li>
+                                    </div>
                                 </div>
-                                <li><Link className='font-bold' to='/buildingManagement'>Building Management Solution</Link></li>
-                                <li><Link className='font-bold' to='/stationarySupply'>Stationary Supply</Link></li>
-                                <li><Link className='font-bold' to='/gardening'>Gardening</Link></li>
                             </ul>
-
-
                         </li>
                         <li><Link to='/client'>Client</Link></li>
                         <li><Link to='/gallery'>Gallery</Link></li>
