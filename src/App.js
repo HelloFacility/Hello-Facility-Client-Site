@@ -7,7 +7,6 @@ import ContactUs from './Components/AdditionalPage/ContactUs';
 import SignIn from './Components/Authentication/SignIn';
 import SignUp from './Components/Authentication/SignUp';
 import AddBlog from './Components/FontPage/BlogPage/AddBlog';
-import Client from './Components/FontPage/Client/Client';
 import BuildingManagementSolution from './Components/FontPage/SubMenuPage/BuildingManagementSolution/BuildingManagementSolution';
 import MonthlyCarRental from './Components/FontPage/SubMenuPage/CarRental/MonthlyCarRental';
 import OnDemandService from './Components/FontPage/SubMenuPage/CarRental/OnDemandService';
@@ -34,32 +33,32 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/addBlog' element={<AddBlog />}></Route>
-        <Route path='/commercialCleaningService' element={<CommercialCleaning/>}></Route>
-        <Route path='/regularOfficeCleaning' element={<RegularOfficeCleaning/>}></Route>
-        <Route path='/carpetCleaning' element={<CarpetCleaning/>}></Route>
-        <Route path='/sofaCleaning' element={<SofaCleaning/>}></Route>
-        <Route path='/kitchenCleaning' element={<KitchenCleaning/>}></Route>
-        <Route path='/bathroomCleaning' element={<BathroomCleaning/>}></Route>
-        <Route path='/antControl' element={<AntControl/>}></Route>
-        <Route path='/cockroachControl' element={<CockroachControl/>}></Route>
-        <Route path='/fumigationService' element={<FumigationService/>}></Route>
-        <Route path='/rodentControl' element={<RodentControl/>}></Route>
-        <Route path='/termiteControl' element={<TermiteControl/>}></Route>
-        <Route path='/woodBorer' element={<WoodBorer/>}></Route>
-        <Route path='/monthlyCarRental' element={<MonthlyCarRental/>}></Route>
-        <Route path='/onDemandService' element={<OnDemandService/>}></Route>
-        <Route path='/weedingCarRental' element={<WeedingCarRental/>}></Route>
-        <Route path='/buildingManagement' element={<BuildingManagementSolution/>}></Route>
-        <Route path='/stationarySupply' element={<StationarySupply/>}></Route>
-        <Route path='/Gardening' element={<Gardening/>}></Route>
-        <Route path='/signIn' element={<SignIn/>}></Route>
-        <Route path='/register' element={<SignUp/>}></Route>
-        <Route path='/additionalClient' element={<AdditionalClient/>}></Route>
-        <Route path='/additionalGallery' element={<AdditionalGallery/>}></Route>
-        <Route path='/additionalBlog' element={<AdditionalBlog/>}></Route>
-        <Route path='/contactUs' element={<ContactUs/>}></Route>
-        
-        
+        <Route path='/commercialCleaningService' element={<CommercialCleaning />}></Route>
+        <Route path='/regularOfficeCleaning' element={<RegularOfficeCleaning />}></Route>
+        <Route path='/carpetCleaning' element={<CarpetCleaning />}></Route>
+        <Route path='/sofaCleaning' element={<SofaCleaning />}></Route>
+        <Route path='/kitchenCleaning' element={<KitchenCleaning />}></Route>
+        <Route path='/bathroomCleaning' element={<BathroomCleaning />}></Route>
+        <Route path='/antControl' element={<AntControl />}></Route>
+        <Route path='/cockroachControl' element={<CockroachControl />}></Route>
+        <Route path='/fumigationService' element={<FumigationService />}></Route>
+        <Route path='/rodentControl' element={<RodentControl />}></Route>
+        <Route path='/termiteControl' element={<TermiteControl />}></Route>
+        <Route path='/woodBorer' element={<WoodBorer />}></Route>
+        <Route path='/monthlyCarRental' element={<MonthlyCarRental />}></Route>
+        <Route path='/onDemandService' element={<OnDemandService />}></Route>
+        <Route path='/weedingCarRental' element={<WeedingCarRental />}></Route>
+        <Route path='/buildingManagement' element={<BuildingManagementSolution />}></Route>
+        <Route path='/stationarySupply' element={<StationarySupply />}></Route>
+        <Route path='/Gardening' element={<Gardening />}></Route>
+        <Route path='/signIn' element={<SignIn />}></Route>
+        <Route path='/signUp' element={<SignUp />}></Route>
+        <Route path='/additionalClient' element={<AdditionalClient />}></Route>
+        <Route path='/additionalGallery' element={<AdditionalGallery />}></Route>
+        <Route path='/additionalBlog' element={<AdditionalBlog />}></Route>
+        <Route path='/contactUs' element={<ContactUs />}></Route>
+
+
       </Routes>
     </div>
   );
