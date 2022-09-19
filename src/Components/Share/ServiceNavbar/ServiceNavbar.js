@@ -76,7 +76,7 @@ const ServiceNavbar = () => {
                             <input className="px-2 focus:outline-none  border-b border-gray-200 leading-4 text-base placeholder-gray-600 py-4 w-full" type="text" placeholder="Search" />
                         </div>
                         <div className="navbar-end">
-                            <Link to='/logIn' className="font-bold">Login</Link>
+                        <Link to='/signIn' className="font-bold">Login</Link>
                         </div>
                     </div>
                 </div>
