@@ -4,6 +4,11 @@ import AdditionalBlog from './Components/AdditionalPage/AdditionalBlog';
 import AdditionalClient from './Components/AdditionalPage/AdditionalClient';
 import AdditionalGallery from './Components/AdditionalPage/AdditionalGallery';
 import ContactUs from './Components/AdditionalPage/ContactUs';
+import AddBlogs from './Components/Dashboard/AdminDashboard/AddBlog/AddBlogs';
+import AddPost from './Components/Dashboard/AdminDashboard/AddPost/AddPost';
+import AdminDashboard from './Components/Dashboard/AdminDashboard';
+import ManageProfile from './Components/Dashboard/AdminDashboard/ManageProfile/ManageProfile';
+import ManageUser from './Components/Dashboard/AdminDashboard/ManageUser/ManageUser';
 import SignIn from './Components/Authentication/SignIn';
 import SignUp from './Components/Authentication/SignUp';
 import AddBlog from './Components/FontPage/BlogPage/AddBlog';
@@ -26,6 +31,10 @@ import TermiteControl from './Components/FontPage/SubMenuPage/PestControl/Termit
 import WoodBorer from './Components/FontPage/SubMenuPage/PestControl/WoodBorer';
 import StationarySupply from './Components/FontPage/SubMenuPage/StationarySupply/StationarySupply';
 import Home from './Components/Home/Home';
+import MyOrder from './Components/Dashboard/CustomersDashboard/MyOrder/MyOrder';
+import MyReview from './Components/Dashboard/CustomersDashboard/MyReview/MyReview';
+import Settings from './Components/Dashboard/CustomersDashboard/Settings/Settings';
+import ViewProfile from './Components/Dashboard/CustomersDashboard/ViewProfile/ViewProfile';
 
 function App() {
   return (
@@ -58,6 +67,19 @@ function App() {
         <Route path='/additionalBlog' element={<AdditionalBlog />}></Route>
         <Route path='/contactUs' element={<ContactUs />}></Route>
 
+        {/* Admin Dashboard Start*/}
+        <Route path="/adminDashboard" element={<AdminDashboard />}>
+          <Route index element={<ManageProfile></ManageProfile>} />
+          <Route path="manageProfile" element={<ManageProfile />} />
+          <Route path="addBlogs" element={<AddBlogs />}></Route>
+          <Route path="addPost" element={<AddPost />}></Route>
+          <Route path="manageUser" element={<ManageUser />}></Route>
+          <Route path="myOrder" element={<MyOrder />}></Route>
+          <Route path="myReview" element={<MyReview />}></Route>
+          <Route path="settings" element={<Settings />}></Route>
+          <Route path="viewProfile" element={<ViewProfile />}></Route>
+        </Route>
+        {/* Admin Dashboard End*/}
 
       </Routes>
     </div>
