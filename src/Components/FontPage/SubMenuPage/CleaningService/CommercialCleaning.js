@@ -1,146 +1,97 @@
 import React from 'react';
 import ServiceNavbar from '../../../Share/ServiceNavbar/ServiceNavbar';
-import TopBanner from '../../../../Images/SubmenuService/SubMenuTop.jpg'
+import TopBanner from '../../../../Images/SubmenuService/SubMenuTopImg.jpg'
 import badge from '../../../../Images/SubmenuService/badge.png'
-import { MdKeyboardArrowDown } from 'react-icons/md';
-import { AiOutlineNumber } from 'react-icons/ai';
+import { MdKeyboardArrowDown, MdKeyboardArrowRight } from 'react-icons/md';
+import { AiFillSafetyCertificate } from 'react-icons/ai';
 
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import FastfoodIcon from '@mui/icons-material/Fastfood';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import HotelIcon from '@mui/icons-material/Hotel';
-import RepeatIcon from '@mui/icons-material/Repeat';
-
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
 
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
+import { Link } from 'react-router-dom';
 
 const CommercialCleaning = () => {
 
     return (
         <div>
             <ServiceNavbar />
-            <div className='h-80 mt-1' style={{
+            <div className='h-96 mt-1' style={{
                 backgroundImage: `url(${TopBanner})`
             }}>
-                <div className='flex gap-4 items-baseline'>
-                    <div>
-                        <h1 className='text-4xl font-bold mt-16 ml-28 text-sky-900'>Plumbing & Sanitary Services</h1>
-                    </div>
-                    <div>
-                        <img className='w-28' src={badge} alt="" />
+                <div className='lg:flex md:justify-between items-center'>
+                    <div className='flex gap-4 items-baseline'>
+                        <div>
+                            <h1 className='lg:text-4xl md:text-3xl text-2xl font-bold mt-16 lg:ml-28 md:ml-16 ml-5 text-white'>Plumbing & Sanitary Services</h1>
+                        </div>
+                        <div>
+                            <img className='lg:w-36 md:w-36 w-48  pr-5' src={badge} alt="" />
+                        </div>
                     </div>
                 </div>
-                <div className='mt-28 ml-28'>
-                    <div className='flex font-semibold text-black'>
-                        <div className='text-xl'><AiOutlineNumber /></div>
+                <div className='lg:ml-28 md:ml-16 ml-5'>
+                    <div className='pt-10'>
+                        <p className='text-xl text-white'>Starts from <span className='text-2xl font-bold'>৳299</span></p>
+                    </div>
+                    <div className='flex font-semibold text-white items-center gap-2 pt-8 '>
+                        <div className='text-xl'><AiFillSafetyCertificate /></div>
                         <div>On Time Work Completion</div>
                     </div>
-                    <div className='flex font-semibold text-black'>
-                        <div className='text-xl'><AiOutlineNumber /></div>
+                    <div className='flex font-semibold text-white items-center gap-2 pt-4'>
+                        <div className='text-xl'><AiFillSafetyCertificate /></div>
                         <div>On Time Work Completion</div>
                     </div>
                 </div>
             </div>
 
-            <div className='flex mt-10'>
-                <div className='w-2/4'>
-                    <div >
-                        <div className=' ml-20'>
-                            <h4 className='font-bold text-lg text-sky-900'>What's included?</h4>
-                            <p className='mt-4'><span className='shadow-sm rounded-full p-1 shadow-blue-600 font-bold'> 01</span> <span className='font-semibold'>Well-trained plumber</span></p>
-                            <p className='mt-4'><span className='shadow-sm rounded-full p-1 shadow-blue-600 font-bold'> 02</span> <span className='font-semibold'>Well-trained plumber</span></p>
+            <div className='lg:flex md:flex justify-between lg:ml-20 mt-10 md:ml-10 ml-5'>
+                <div>
+                    <div>
+                        <h4 className='font-bold text-lg text-sky-900'>What's included?</h4>
+                        <div className='flex font-semibold text-black items-center gap-2 pt-4'>
+                            <div className='text-xl'><AiFillSafetyCertificate /></div>
+                            <div>On Time Work Completion</div>
+                        </div>
+                        <div className='flex font-semibold text-black items-center gap-2 pt-4'>
+                            <div className='text-xl'><AiFillSafetyCertificate /></div>
+                            <div>On Time Work Completion</div>
                         </div>
                     </div>
-                    <div className='mt-10'>
-                        <div className='w-2/3 ml-20'>
-                            <h4 className='font-bold text-lg text-sky-900'>What's excluded?</h4>
-                            <p className='mt-4'><span className='shadow-sm rounded-full p-1 shadow-blue-600 font-bold'> 01</span> <span className='font-semibold'>Well-trained plumber</span></p>
-                            <p className='mt-4'><span className='shadow-sm rounded-full p-1 shadow-blue-600 font-bold'> 02</span> <span className='font-semibold'>Well-trained plumber</span></p>
+                    <br />
+                    <div>
+                        <h4 className='font-bold text-lg text-sky-900'>What's excluded?</h4>
+                        <div className='flex font-semibold text-black items-center gap-2 pt-4'>
+                            <div className='text-xl'><AiFillSafetyCertificate /></div>
+                            <div>On Time Work Completion</div>
+                        </div>
+                        <div className='flex font-semibold text-black items-center gap-2 pt-4'>
+                            <div className='text-xl'><AiFillSafetyCertificate /></div>
+                            <div>On Time Work Completion</div>
                         </div>
                     </div>
                 </div>
-
-                <div className='w-2/4 ml-28'>
-                    <h1 className='text-2xl font-bold text-sky-900 pb-5'>Plumbing & Sanitary Services</h1>
-                    <form>
-                        {/* Service Order Form */}
-                        <Box
-                            component="form"
-                            sx={{
-                                '& .MuiTextField-root': { m: 1, width: '25ch' },
-                            }}
-                            noValidate
-                            autoComplete="off"
-                        >
-                            <div>
-                                <TextField
-                                    required
-                                    id="outlined-required"
-                                    label="Required"
-                                    defaultValue="Hello World"
-                                />
-                                <TextField
-                                    disabled
-                                    id="outlined-disabled"
-                                    label="Disabled"
-                                    defaultValue="Hello World"
-                                />
-                                <TextField
-                                    id="outlined-password-input"
-                                    label="Password"
-                                    type="password"
-                                    autoComplete="current-password"
-                                />
-                                <TextField
-                                    id="outlined-read-only-input"
-                                    label="Read Only"
-                                    defaultValue="Hello World"
-                                    InputProps={{
-                                        readOnly: true,
-                                    }}
-                                />
-                                <TextField
-                                    id="outlined-number"
-                                    label="Number"
-                                    type="number"
-                                    InputLabelProps={{
-                                        shrink: true,
-                                    }}
-                                />
-                                <TextField id="outlined-search" label="Search field" type="search" />
-                                <TextField
-                                    id="outlined-helperText"
-                                    label="Helper text"
-                                    defaultValue="Default Value"
-                                    helperText="Some important text"
-                                />
-                            </div>
-                        </Box>
-                    </form>
+                <div className='lg:mr-20 mt-10 md:mr-10 mr-5'>
+                    <div className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-5 py-4 rounded-lg'>
+                        <Link className='bg-white px-20 font-bold py-3 rounded-lg flex items-center gap-3' to='/'>Order Request <MdKeyboardArrowRight /> </Link>
+                    </div>
                 </div>
             </div>
 
             {/* FAQ */}
             <div>
                 <h1 className='text-3xl font-semibold ml-20 mt-10'>FAQ</h1>
-                <div className='mx-20 mt-5'>
+                <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
                     <Accordion>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -179,91 +130,46 @@ const CommercialCleaning = () => {
             </div>
 
             {/* How To Order */}
-            <div className='ml-20 mt-10'>
+            <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
                 <h1 className='text-3xl font-bold'>How to order</h1>
-                <Timeline position="alternate">
-                    <TimelineItem>
-                        <TimelineOppositeContent
-                            sx={{ m: 'auto 0' }}
-                            align="right"
-                            variant="body2"
-                            color="text.secondary"
-                        >
-                            9:30 am
-                        </TimelineOppositeContent>
-                        <TimelineSeparator>
-                            <TimelineConnector />
-                            <TimelineDot>
-                                <FastfoodIcon />
-                            </TimelineDot>
-                            <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent sx={{ py: '12px', px: 2 }}>
-                            <Typography variant="h6" component="span">
-                                Eat
-                            </Typography>
-                            <Typography>Because you need strength</Typography>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineOppositeContent
-                            sx={{ m: 'auto 0' }}
-                            variant="body2"
-                            color="text.secondary"
-                        >
-                            10:00 am
-                        </TimelineOppositeContent>
-                        <TimelineSeparator>
-                            <TimelineConnector />
-                            <TimelineDot color="primary">
-                                <LaptopMacIcon />
-                            </TimelineDot>
-                            <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent sx={{ py: '12px', px: 2 }}>
-                            <Typography variant="h6" component="span">
-                                Code
-                            </Typography>
-                            <Typography>Because it&apos;s awesome!</Typography>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineSeparator>
-                            <TimelineConnector />
-                            <TimelineDot color="primary" variant="outlined">
-                                <HotelIcon />
-                            </TimelineDot>
-                            <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-                        </TimelineSeparator>
-                        <TimelineContent sx={{ py: '12px', px: 2 }}>
-                            <Typography variant="h6" component="span">
-                                Sleep
-                            </Typography>
-                            <Typography>Because you need rest</Typography>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineSeparator>
-                            <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-                            <TimelineDot color="secondary">
-                                <RepeatIcon />
-                            </TimelineDot>
-                            <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent sx={{ py: '12px', px: 2 }}>
-                            <Typography variant="h6" component="span">
-                                Repeat
-                            </Typography>
-                            <Typography>Because this is the life you love!</Typography>
-                        </TimelineContent>
-                    </TimelineItem>
-                </Timeline>
+                <div className='w-0'>
+                    <Timeline>
+                        <TimelineItem>
+                            <TimelineSeparator>
+                                <TimelineDot color="success"/>
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent className='whitespace-nowrap'>
+                                <h2 className='font-bold'>Go to order Request</h2>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineSeparator>
+                                <TimelineDot color="success"/>
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent className='whitespace-nowrap'>
+                                <h2 className='font-bold'>Book your schedule</h2>
+                                <p>Select your convenient time slot.</p>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineSeparator>
+                                <TimelineDot color="success"/>
+                            </TimelineSeparator>
+                            <TimelineContent className='whitespace-nowrap'>
+                                <h2 className='font-bold'>Place order</h2>
+                                <p>Confirm your order by clicking ‘Place order’.</p>
+                            </TimelineContent>
+                        </TimelineItem>
+                    </Timeline>
+                </div>
 
             </div>
 
             {/* Preparations against COVID-19 */}
 
-            <div className='ml-20 mt-10'>
+            <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
                 <h1 className='font-bold text-2xl'>Preparations against COVID-19</h1>
                 <img className='w-1/5 mt-5' src={badge} alt="" />
                 <small className='italic text-base mt-4'>We are well-equipped and well-prepared to protect your health and hygiene while serve you. Our preparations include-</small>
@@ -274,13 +180,13 @@ const CommercialCleaning = () => {
             </div>
 
             {/* Service Details */}
-            <div className='ml-20 mt-10'>
+            <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
                 <h1 className='font-bold text-2xl'>Service Details</h1>
                 <p className='pr-20 font-medium'>All your Plumbing and Sanitary-related problems will be taken care of by Sheba.xyz marketplace. We have trusted professionals who are experts in fitting, installations, and drainage related issues.</p>
             </div>
 
             {/* Review */}
-            <div className='ml-20 mt-10'>
+            <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
                 <Stack spacing={1}>
                     <p className='font-bold'>Abdullah Al Habib</p>
                     <Rating name="size-medium" defaultValue={2} />
