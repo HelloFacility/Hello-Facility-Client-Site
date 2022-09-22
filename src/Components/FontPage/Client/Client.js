@@ -4,7 +4,7 @@ const Client = () => {
     return (
         <div className="container px-20 pt-16">
             <div className="xl:w-full w-11/12 mx-auto">
-            <h1 className="text-3xl font-bold xl:block hidden leading-tight text-sky-900">
+            <h1 className="text-3xl font-bold xl:block leading-tight text-sky-900">
             Our Valuable Client
                     </h1>
                 <p className="text-xl xl:text-left md:text-left lg:text-left md:w-full text-center xl:w-2/3 lg:w-2/3 w-11/12 mx-auto xl:mx-0 lg:mx-0 text-gray-600">You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.</p>

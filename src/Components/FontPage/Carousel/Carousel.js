@@ -12,10 +12,10 @@ const Carousel = () => {
             }}>
                 <div className="text-center">
                     <h1 className="pt-10 text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-5xl">
-                        <span className="block xl:inline md:pl-2">Data to enrich your</span>{' '} <br />
-                        <span className="block text-sky-900 xl:inline md:pl-2">online business</span>
+                        <span className="block xl:inline md:pl-2 text-white">Data to enrich your</span>{' '} <br />
+                        <span className="block  xl:inline md:pl-2 text-white">online business</span>
                     </h1>
-                    <p className='text-center mt-3 text-gray-500 text-xl '>Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. 
+                    <p className='text-center mt-3 text-xl text-white'>Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. 
                     <br />Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
                     <p className="text-center mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0 md:pl-2">
                         
