@@ -6,6 +6,7 @@ import Navbar from '../Share/Navbar/Navbar';
 import WhyChoose from '../FontPage/WhyChoose/WhyChoose';
 import RentalCleaningService from '../Service/RentalCleaningService';
 import Footer from '../Share/Footer/Footer';
+import OurService from '../FontPage/OurService/OurService';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Navbar />
             <Carousel />
             <RentalCleaningService />
+            <OurService/>
             <WhyChoose />
             <Client />
             <BlogPage />

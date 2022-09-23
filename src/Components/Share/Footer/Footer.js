@@ -5,7 +5,6 @@ const Footer = () => {
     return (
         <div>
             <div>
-                <div className="relative flex justify-start md:justify-center md:items-end ">
                     <div className="flex px-4 md:px-6  xl:px-20 flex-col justify-start items-start md:justify-center md:items-center relative z-10 bg-sky-900 pt-10">
                         <div className="flex  flex-col items-start justify-start xl:justify-center xl:space-x-8 xl:flex-row">
                             <div className="flex flex-col justify-start items-center space-x-4">
@@ -70,7 +69,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="mt-12 flex  xl:justify-between xl:flex-row flex-col-reverse items-center xl:items-start w-full ">
-                            <p className="mt-10 md:mt-12 xl:mt-0 text-sm leading-none text-white">Copyright © {new Date().getFullYear()} Hello Facility. All rights reserved.</p>
+                            <p className="my-10 md:mt-12 xl:mt-0 text-sm leading-none text-white">Copyright © {new Date().getFullYear()} Hello Facility. All rights reserved.</p>
                             <div className="mt-10 md:mt-12 xl:mt-0 md:flex-row flex-col flex md:justify-center w-full md:w-auto justify-start items-start space-y-4 md:space-y-0 md:items-center md:space-x-4 xl:space-x-6">
                                 <button className="text-base leading-none text-white hover:text-gray-300">
                                     Terms of service
@@ -110,7 +109,6 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     );
 };
