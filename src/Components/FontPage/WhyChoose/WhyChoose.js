@@ -1,4 +1,5 @@
 import React from 'react';
+import CountUp from 'react-countup';
 
 const WhyChoose = () => {
     return (
@@ -6,9 +7,8 @@ const WhyChoose = () => {
             <div>
                 <div className="flex items-center justify-between h-full w-full absolute z-0">
                     <div className="w-1/3 bg-white h-full" />
-                    {/* <div className="w-4/6 ml-16 bg-gray-100 h-full" /> */}
                 </div>
-                <div className="xl:px-20 px-8 py-20 2xl:mx-auto 2xl:container relative z-40">
+                <div className="xl:px-20 px-8 pt-10 2xl:mx-auto 2xl:container relative z-40">
                     <h1 className="text-3xl font-bold xl:block leading-tight text-sky-900">
                         Why Choose Us
                     </h1>
@@ -22,13 +22,55 @@ const WhyChoose = () => {
                                     <h1 className="text-2xl font-semibold xl:leading-loose text-gray-800">Some of the best work that was done!</h1>
                                     <p className="text-base font-medium leading-6 mt-4 text-gray-600">Our core values are at the heart of all that we do. They are integrated into our daily work lives and help us to remember our customers always comes first, the last thank you should always comes from us.</p>
                                 </div>
-                                <div className="md:mt-0 mt-8">
-                                    <p className="text-base font-medium leading-4 text-gray-800">Anna Smith</p>
-                                    <p className="text-base leading-4 mt-2 mb-4 text-gray-600">Senior Web Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='bg-slate-300 py-1 px-1 mt-5'>
+                        <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4 items-center'>
+                            <div className='bg-slate-50 py-6 text-center'>
+                                <div className='font-bold text-5xl'>
+                                    <CountUp start={0} end={12} delay={2}>
+                                        {({ countUpRef }) => (
+                                            <div>
+                                                <span ref={countUpRef} />+
+                                            </div>
+                                        )}
+                                    </CountUp>
+                                </div>
+                                <div className='text-xl font-semibold'>
+                                    Service Providers
+                                </div>
+                            </div>
+                            <div className='bg-slate-50 py-6 text-center'>
+                                <div className='font-bold text-5xl'>
+                                    <CountUp start={0} end={12} delay={2}>
+                                        {({ countUpRef }) => (
+                                            <div>
+                                                <span ref={countUpRef} />+
+                                            </div>
+                                        )}
+                                    </CountUp>
+                                </div>
+                                <div className='text-xl font-semibold'>
+                                    Service Providers
+                                </div>
+                            </div>
+                            <div className='bg-slate-50 py-6 text-center'>
+                                <div className='font-bold text-5xl'>
+                                    <CountUp start={0} end={12} delay={2}>
+                                        {({ countUpRef }) => (
+                                            <div>
+                                                <span ref={countUpRef} />+
+                                            </div>
+                                        )}
+                                    </CountUp>
+                                </div>
+                                <div className='text-xl font-semibold'>
+                                    Service Providers
                                 </div>
                             </div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </div>
