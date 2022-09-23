@@ -35,6 +35,7 @@ import MyOrder from './Components/Dashboard/CustomersDashboard/MyOrder/MyOrder';
 import MyReview from './Components/Dashboard/CustomersDashboard/MyReview/MyReview';
 import Settings from './Components/Dashboard/CustomersDashboard/Settings/Settings';
 import ViewProfile from './Components/Dashboard/CustomersDashboard/ViewProfile/ViewProfile';
+import CleaningOrderForm from './Components/FontPage/SubMenuPage/CleaningService/CleaningOrderForm';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/addBlog' element={<AddBlog />}></Route>
         <Route path='/commercialCleaningService' element={<CommercialCleaning />}></Route>
+        <Route path='/cleaningOrder' element={<CleaningOrderForm />}></Route>
         <Route path='/regularOfficeCleaning' element={<RegularOfficeCleaning />}></Route>
         <Route path='/carpetCleaning' element={<CarpetCleaning />}></Route>
         <Route path='/sofaCleaning' element={<SofaCleaning />}></Route>

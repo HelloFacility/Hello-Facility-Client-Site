@@ -83,7 +83,7 @@ const CommercialCleaning = () => {
                 </div>
                 <div className='lg:mr-20 mt-10 md:mr-10 mr-5'>
                     <div className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-5 py-4 rounded-lg'>
-                        <Link className='bg-white px-20 font-bold py-3 rounded-lg flex items-center gap-3' to='/'>Order Request <MdKeyboardArrowRight /> </Link>
+                        <Link className='bg-white px-20 font-bold py-3 rounded-lg flex items-center gap-3' to='/cleaningOrder'>Order Request <MdKeyboardArrowRight /> </Link>
                     </div>
                 </div>
             </div>
