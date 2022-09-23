@@ -2,7 +2,7 @@ import React from 'react';
 import ServiceNavbar from '../../../Share/ServiceNavbar/ServiceNavbar';
 import TopBanner from '../../../../Images/SubmenuService/SubMenuTopImg.jpg'
 import badge from '../../../../Images/SubmenuService/badge.png'
-import { MdKeyboardArrowDown, MdKeyboardArrowRight } from 'react-icons/md';
+import { MdKeyboardArrowRight } from 'react-icons/md';
 import { AiFillSafetyCertificate } from 'react-icons/ai';
 
 import Accordion from '@mui/material/Accordion';
@@ -91,7 +91,7 @@ const CommercialCleaning = () => {
             {/* FAQ */}
             <div>
                 <h1 className='text-3xl font-semibold ml-20 mt-10'>FAQ</h1>
-                <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
+                <div className='lg:ml-20 mt-10 md:ml-10 ml-5 lg:mr-20 md:mr-10 mr-5'>
                     <Accordion>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -99,7 +99,6 @@ const CommercialCleaning = () => {
                             id="panel1a-header"
                         >
                             <Typography className='flex items-center gap-2'>
-                                <span className='text-sky-900'><MdKeyboardArrowDown /></span>
                                 Does accessories cost included in service charge?
                             </Typography>
                         </AccordionSummary>
@@ -116,7 +115,6 @@ const CommercialCleaning = () => {
                             id="panel1a-header"
                         >
                             <Typography className='flex items-center gap-2'>
-                                <span className='text-sky-900'><MdKeyboardArrowDown /></span>
                                 Does accessories cost included in service charge?
                             </Typography>
                         </AccordionSummary>
