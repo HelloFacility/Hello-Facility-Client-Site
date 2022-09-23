@@ -25,7 +25,6 @@ const Navbar = () => {
                                                 <li>
                                                     <h2 className='font-bold'>Cleaning Service</h2>
                                                     <Link to='/commercialCleaningService'>Commercial Cleaning Service</Link>
-                                                    <Link to='/regularOfficeCleaning'>Regular Office Cleaning</Link>
                                                     <Link to='/carpetCleaning'>Carpet Cleaning</Link>
                                                     <Link to='/sofaCleaning'>Sofa Cleaning</Link>
                                                     <Link to='/kitchenCleaning'>Kitchen Cleaning</Link>
@@ -85,7 +84,6 @@ const Navbar = () => {
                                             <li>
                                                 <h2 className='font-bold'>Cleaning Service</h2>
                                                 <Link to='/commercialCleaningService'>Commercial Cleaning Service</Link>
-                                                <Link to='/regularOfficeCleaning'>Regular Office Cleaning</Link>
                                                 <Link to='/carpetCleaning'>Carpet Cleaning</Link>
                                                 <Link to='/sofaCleaning'>Sofa Cleaning</Link>
                                                 <Link to='/kitchenCleaning'>Kitchen Cleaning</Link>
