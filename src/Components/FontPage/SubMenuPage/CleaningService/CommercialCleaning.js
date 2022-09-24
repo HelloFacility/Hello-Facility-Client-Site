@@ -3,7 +3,8 @@ import ServiceNavbar from '../../../Share/ServiceNavbar/ServiceNavbar';
 import TopBanner from '../../../../Images/SubmenuService/SubMenuTopImg.jpg'
 import badge from '../../../../Images/SubmenuService/badge.png'
 import { MdKeyboardArrowRight } from 'react-icons/md';
-import { AiFillSafetyCertificate } from 'react-icons/ai';
+import { AiFillSafetyCertificate, AiFillSave } from 'react-icons/ai';
+import banner from '../../../../Images/SubmenuService/SubMenuTopImg.jpg'
 
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -22,8 +23,16 @@ import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
 import { Link } from 'react-router-dom';
 
-const CommercialCleaning = () => {
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import { Button, FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
+const CommercialCleaning = () => {
+    const [age, setAge] = React.useState('');
+
+    const handleChange = (event) => {
+      setAge(event.target.value);
+    };
     return (
         <div>
             <ServiceNavbar />
@@ -56,41 +65,80 @@ const CommercialCleaning = () => {
             </div>
 
             <div className='lg:flex md:flex justify-between lg:ml-20 mt-10 md:ml-10 ml-5'>
-                <div>
+                <div className='lg:w-3/4 md:w-3/4 lg:shadow-lg lg:mr-10 lg:p-5 md:shadow-lg md:mr-10 md:p-5'>
                     <div>
+                        <h1 className='text-2xl font-bold pb-4'>Overview</h1>
                         <h4 className='font-bold text-lg text-sky-900'>What's included?</h4>
-                        <div className='flex font-semibold text-black items-center gap-2 pt-4'>
-                            <div className='text-xl'><AiFillSafetyCertificate /></div>
-                            <div>On Time Work Completion</div>
-                        </div>
-                        <div className='flex font-semibold text-black items-center gap-2 pt-4'>
-                            <div className='text-xl'><AiFillSafetyCertificate /></div>
-                            <div>On Time Work Completion</div>
-                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quas illo consequatur ducimus autem, molestias quae eos ea facere perspiciatis officia odit neque quasi quam nesciunt quaerat pariatur sequi laudantium culpa architecto esse nemo, sunt explicabo. Ducimus vel repellendus sint, saepe nesciunt veniam omnis commodi repudiandae earum nam, illo laudantium!</p>
                     </div>
                     <br />
                     <div>
                         <h4 className='font-bold text-lg text-sky-900'>What's excluded?</h4>
-                        <div className='flex font-semibold text-black items-center gap-2 pt-4'>
-                            <div className='text-xl'><AiFillSafetyCertificate /></div>
-                            <div>On Time Work Completion</div>
-                        </div>
-                        <div className='flex font-semibold text-black items-center gap-2 pt-4'>
-                            <div className='text-xl'><AiFillSafetyCertificate /></div>
-                            <div>On Time Work Completion</div>
-                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quas illo consequatur ducimus autem, molestias quae eos ea facere perspiciatis officia odit neque quasi quam nesciunt quaerat pariatur sequi laudantium culpa architecto esse nemo, sunt explicabo. Ducimus vel repellendus sint, saepe nesciunt veniam omnis commodi repudiandae earum nam, illo laudantium!</p>
                     </div>
                 </div>
-                <div className='lg:mr-20 mt-10 md:mr-10 mr-5'>
-                    <div className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-5 py-4 rounded-lg'>
-                        <Link className='bg-white px-20 font-bold py-3 rounded-lg flex items-center gap-3' to='/cleaningOrder'>Order Request <MdKeyboardArrowRight /> </Link>
-                    </div>
+                <div className=' lg:w-1/4 md:w-1/4 lg:shadow-lg lg:mr-16 lg:p-5 md:shadow-lg md:mr-16 md:p-5'>
+                    <h1 className='text-xl font-bold text-sky-900 text-center'>Request For Quote</h1>
+                    <h1 className='text-base font-bold mb-4 text-yellow-500 text-center'>This Service Only for Office</h1>
+                    <form>
+                        <TextField
+                            required
+                            id="outlined-required"
+                            label="Company Name"
+                            type="text"
+                            sx={{ width: 250 }}
+                            InputLabelProps={{
+                                shrink: true,
+                            }}
+                        />
+                        <br /> <br />
+                        <TextField
+                            required
+                            id="outlined-required"
+                            label="Total Area"
+                            type="email"
+                            sx={{ width: 250 }}
+                            InputLabelProps={{
+                                shrink: true,
+                            }}
+                        />
+                        <br /> <br />
+                        <Box sx={{ minWidth: 120 }}>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Service</InputLabel>
+                                <Select
+                                    labelId="demo-simple-select-label"
+                                    id="demo-simple-select"
+                                    value={age}
+                                    label="Service"
+                                    onChange={handleChange}
+                                >
+                                    <MenuItem value={10}>One Time</MenuItem>
+                                    <MenuItem value={20}>Monthly</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </Box>
+                        <br /> <br />
+                        <TextField
+                            id="date"
+                            label="Request Service Date"
+                            type="date"
+                            defaultValue="2017-05-24"
+                            sx={{ width: 250 }}
+                            InputLabelProps={{
+                                shrink: true,
+                            }}
+                        /> <br /> <br />
+                        <div className='flex justify-center'>
+                            <Button variant="outlined" size="large">Send</Button>
+                        </div>
+                    </form>
                 </div>
             </div>
 
-            {/* FAQ */}
-            <div>
-                <h1 className='text-3xl font-semibold ml-20 mt-10'>FAQ</h1>
+            {/* Good to know */}
+            {/* <div>
+                <h1 className='text-3xl font-semibold ml-20 mt-10'>Good to know</h1>
                 <div className='lg:ml-20 mt-10 md:ml-10 ml-5 lg:mr-20 md:mr-10 mr-5'>
                     <Accordion>
                         <AccordionSummary
@@ -125,51 +173,60 @@ const CommercialCleaning = () => {
                         </AccordionDetails>
                     </Accordion>
                 </div>
-            </div>
+            </div> */}
 
             {/* How To Order */}
-            <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
-                <h1 className='text-3xl font-bold'>How to order</h1>
-                <div className='w-0'>
-                    <Timeline>
-                        <TimelineItem>
-                            <TimelineSeparator>
-                                <TimelineDot color="success"/>
-                                <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent className='whitespace-nowrap'>
-                                <h2 className='font-bold'>Go to order Request</h2>
-                            </TimelineContent>
-                        </TimelineItem>
-                        <TimelineItem>
-                            <TimelineSeparator>
-                                <TimelineDot color="success"/>
-                                <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent className='whitespace-nowrap'>
-                                <h2 className='font-bold'>Book your schedule</h2>
-                                <p>Select your convenient time slot.</p>
-                            </TimelineContent>
-                        </TimelineItem>
-                        <TimelineItem>
-                            <TimelineSeparator>
-                                <TimelineDot color="success"/>
-                            </TimelineSeparator>
-                            <TimelineContent className='whitespace-nowrap'>
-                                <h2 className='font-bold'>Place order</h2>
-                                <p>Confirm your order by clicking ‘Place order’.</p>
-                            </TimelineContent>
-                        </TimelineItem>
-                    </Timeline>
+            <div className='lg:flex md:flex items-center lg:mx-20 md:mx-16 mx-5 shadow-lg mt-5 p-5'>
+                <div className='w-1/2'>
+                    <img src={banner} alt="" />
                 </div>
+                <div>
+                    <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
+                        <h1 className='text-3xl font-bold'>How to order</h1>
+                        <div className='w-0'>
+                            <Timeline>
+                                <TimelineItem>
+                                    <TimelineSeparator>
+                                        <TimelineDot color="success" />
+                                        <TimelineConnector />
+                                    </TimelineSeparator>
+                                    <TimelineContent className='whitespace-nowrap'>
+                                        <h2 className='font-bold'>Go to order Request</h2>
+                                    </TimelineContent>
+                                </TimelineItem>
+                                <TimelineItem>
+                                    <TimelineSeparator>
+                                        <TimelineDot color="success" />
+                                        <TimelineConnector />
+                                    </TimelineSeparator>
+                                    <TimelineContent className='whitespace-nowrap'>
+                                        <h2 className='font-bold'>Book your schedule</h2>
+                                        <p>Select your convenient time slot.</p>
+                                    </TimelineContent>
+                                </TimelineItem>
+                                <TimelineItem>
+                                    <TimelineSeparator>
+                                        <TimelineDot color="success" />
+                                    </TimelineSeparator>
+                                    <TimelineContent className='whitespace-nowrap'>
+                                        <h2 className='font-bold'>Place order</h2>
+                                        <p>Confirm your order by clicking ‘Place order’.</p>
+                                    </TimelineContent>
+                                </TimelineItem>
+                            </Timeline>
+                        </div>
 
+                    </div>
+                </div>
             </div>
 
             {/* Preparations against COVID-19 */}
 
             <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
-                <h1 className='font-bold text-2xl'>Preparations against COVID-19</h1>
-                <img className='w-1/5 mt-5' src={badge} alt="" />
+                <div className='flex items-end gap-5 mb-5'>
+                    <h1 className='font-bold text-2xl'>Preparations against COVID-19</h1>
+                    <img className='w-24 mt-5' src={badge} alt="" />
+                </div>
                 <small className='italic text-base mt-4'>We are well-equipped and well-prepared to protect your health and hygiene while serve you. Our preparations include-</small>
                 <p>1. Checked Health condition of service specialist</p>
                 <p>2. Ensuring use of masks, hand sanitisers, gloves, etc</p>
@@ -182,9 +239,17 @@ const CommercialCleaning = () => {
                 <h1 className='font-bold text-2xl'>Service Details</h1>
                 <p className='pr-20 font-medium'>All your Plumbing and Sanitary-related problems will be taken care of by Sheba.xyz marketplace. We have trusted professionals who are experts in fitting, installations, and drainage related issues.</p>
             </div>
+            <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
+                <h1 className='font-bold text-2xl'>Service Details</h1>
+                <p className='pr-20 font-medium'>All your Plumbing and Sanitary-related problems will be taken care of by Sheba.xyz marketplace. We have trusted professionals who are experts in fitting, installations, and drainage related issues.</p>
+            </div>
+            <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
+                <h1 className='font-bold text-2xl'>Service Details</h1>
+                <p className='pr-20 font-medium'>All your Plumbing and Sanitary-related problems will be taken care of by Sheba.xyz marketplace. We have trusted professionals who are experts in fitting, installations, and drainage related issues.</p>
+            </div>
 
             {/* Review */}
-            <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
+            <div className='lg:ml-20 mt-10 md:ml-10 ml-5 shadow-lg p-5'>
                 <Stack spacing={1}>
                     <p className='font-bold'>Abdullah Al Habib</p>
                     <Rating name="size-medium" defaultValue={2} />
