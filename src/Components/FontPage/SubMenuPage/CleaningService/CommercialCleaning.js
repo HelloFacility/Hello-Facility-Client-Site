@@ -27,12 +27,70 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { Button, FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
+
+
+
+import Stepper from '@mui/material/Stepper';
+import Step from '@mui/material/Step';
+import StepLabel from '@mui/material/StepLabel';
+import StepContent from '@mui/material/StepContent';
+import Paper from '@mui/material/Paper';
 const CommercialCleaning = () => {
     const [age, setAge] = React.useState('');
 
     const handleChange = (event) => {
-      setAge(event.target.value);
+        setAge(event.target.value);
     };
+
+
+
+
+
+
+
+
+    const [activeStep, setActiveStep] = React.useState(0);
+
+    const handleNext = () => {
+      setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    };
+  
+    const handleBack = () => {
+      setActiveStep((prevActiveStep) => prevActiveStep - 1);
+    };
+  
+    const handleReset = () => {
+      setActiveStep(0);
+    };
+
+
+
+
+
+
+
+
+
+    const steps = [
+        {
+          label: 'Select campaign settings',
+          description: `For each ad campaign that you create, you can control how much
+                    you're willing to spend on clicks and conversions, which networks
+                    and geographical locations you want your ads to show on, and more.`,
+        },
+        {
+          label: 'Create an ad group',
+          description:
+            'An ad group contains one or more ads which target a shared set of keywords.',
+        },
+        {
+          label: 'Create an ad',
+          description: `Try out different ad text to see what brings in the most customers,
+                    and learn how to enhance your ads using features like ad extensions.
+                    If you run into any problems with your ads, find out how to tell if
+                    they're running and how to resolve approval issues.`,
+        },
+      ];
     return (
         <div>
             <ServiceNavbar />
@@ -228,10 +286,89 @@ const CommercialCleaning = () => {
                     <img className='w-24 mt-5' src={badge} alt="" />
                 </div>
                 <small className='italic text-base mt-4'>We are well-equipped and well-prepared to protect your health and hygiene while serve you. Our preparations include-</small>
-                <p>1. Checked Health condition of service specialist</p>
+
+
+
+
+
+
+
+
+
+                <Box sx={{ maxWidth: 400 }}>
+                    <Stepper activeStep={activeStep} orientation="vertical">
+                        {steps.map((step, index) => (
+                            <Step key={step.label}>
+                                <StepLabel
+                                    optional={
+                                        index === 2 ? (
+                                            <Typography variant="caption">Last step</Typography>
+                                        ) : null
+                                    }
+                                >
+                                    {step.label}
+                                </StepLabel>
+                                <StepContent>
+                                    <Typography>{step.description}</Typography>
+                                    <Box sx={{ mb: 2 }}>
+                                        <div>
+                                            <Button
+                                                variant="contained"
+                                                onClick={handleNext}
+                                                sx={{ mt: 1, mr: 1 }}
+                                            >
+                                                {index === steps.length - 1 ? 'Finish' : 'Continue'}
+                                            </Button>
+                                            <Button
+                                                disabled={index === 0}
+                                                onClick={handleBack}
+                                                sx={{ mt: 1, mr: 1 }}
+                                            >
+                                                Back
+                                            </Button>
+                                        </div>
+                                    </Box>
+                                </StepContent>
+                            </Step>
+                        ))}
+                    </Stepper>
+                    {/* {activeStep === steps.length && (
+                        <Paper square elevation={0} sx={{ p: 3 }}>
+                            <Typography>All steps completed - you&apos;re finished</Typography>
+                            <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
+                                Reset
+                            </Button>
+                        </Paper>
+                    )} */}
+                </Box>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                {/* <p>1. Checked Health condition of service specialist</p>
                 <p>2. Ensuring use of masks, hand sanitisers, gloves, etc</p>
                 <p>3. Disinfecting equipments before and after the work</p>
-                <p>4. Maintaining social distancing</p>
+                <p>4. Maintaining social distancing</p> */}
             </div>
 
             {/* Service Details */}
