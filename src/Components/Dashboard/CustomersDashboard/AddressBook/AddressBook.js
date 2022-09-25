@@ -1,11 +1,11 @@
 import React from 'react';
 
-const ViewProfile = () => {
+const AddressBook = () => {
     return (
         <div>
-            View Profile
+            Address Book
         </div>
     );
 };
 
-export default ViewProfile;
+export default AddressBook;

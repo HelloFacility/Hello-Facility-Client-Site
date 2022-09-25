@@ -33,9 +33,12 @@ import StationarySupply from './Components/FontPage/SubMenuPage/StationarySupply
 import Home from './Components/Home/Home';
 import MyOrder from './Components/Dashboard/CustomersDashboard/MyOrder/MyOrder';
 import MyReview from './Components/Dashboard/CustomersDashboard/MyReview/MyReview';
-import Settings from './Components/Dashboard/CustomersDashboard/Settings/Settings';
-import ViewProfile from './Components/Dashboard/CustomersDashboard/ViewProfile/ViewProfile';
 import CleaningOrderForm from './Components/FontPage/SubMenuPage/CleaningService/CleaningOrderForm';
+import MyProfile from './Components/Dashboard/CustomersDashboard/MyProfile/MyProfile';
+import AddressBook from './Components/Dashboard/CustomersDashboard/AddressBook/AddressBook';
+import Coupon from './Components/Dashboard/CustomersDashboard/Coupon/Coupon';
+import RequestService from './Components/Dashboard/CustomersDashboard/RequestService/RequestService';
+import MyCancellations from './Components/Dashboard/CustomersDashboard/MyCancellations/MyCancellations';
 
 function App() {
   return (
@@ -70,16 +73,23 @@ function App() {
         <Route path='/contactUs' element={<ContactUs />}></Route>
 
         {/* Admin Dashboard Start*/}
-        <Route path="/adminDashboard" element={<AdminDashboard />}>
-          <Route index element={<ManageProfile></ManageProfile>} />
+        <Route path="/dashboard" element={<AdminDashboard />}>
+          <Route index element={<MyProfile />}></Route>
+          <Route path="myProfile" element={<MyProfile />}></Route>
           <Route path="manageProfile" element={<ManageProfile />} />
           <Route path="addBlogs" element={<AddBlogs />}></Route>
           <Route path="addPost" element={<AddPost />}></Route>
           <Route path="manageUser" element={<ManageUser />}></Route>
+
+          {/* For Customer */}
           <Route path="myOrder" element={<MyOrder />}></Route>
           <Route path="myReview" element={<MyReview />}></Route>
-          <Route path="settings" element={<Settings />}></Route>
-          <Route path="viewProfile" element={<ViewProfile />}></Route>
+          <Route path="addressBook" element={<AddressBook />}></Route>
+          <Route path="coupon" element={<Coupon />}></Route>
+          <Route path="requestService" element={<RequestService />}></Route>
+          <Route path="myCancellations" element={<MyCancellations />}></Route>
+          {/* For Customer */}
+
         </Route>
         {/* Admin Dashboard End*/}
 

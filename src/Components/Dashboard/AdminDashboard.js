@@ -21,7 +21,7 @@ const AdminDashboard = () => {
             ease-in-out ${open ? "w-9/12" : "hidden md:flex"}`}
                 >
                     <div className="md:mx-2 lg:mx-4">
-                        <NavLink to="manageProfile">
+                        <NavLink to="myProfile">
                             {({ isActive }) => (
                                 <span
                                     className={
@@ -30,11 +30,11 @@ const AdminDashboard = () => {
                                             : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
                                     }
                                 >
-                                    <span>Manage Profile</span>
+                                    <span>My Profile</span>
                                 </span>
                             )}
                         </NavLink>
-                        <NavLink to="addBlogs">
+                        <NavLink to="addressBook">
                             {({ isActive }) => (
                                 <span
                                     className={
@@ -43,46 +43,7 @@ const AdminDashboard = () => {
                                             : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
                                     }
                                 >
-                                    <span>Add Blog</span>
-                                </span>
-                            )}
-                        </NavLink>
-                        <NavLink to="addPost">
-                            {({ isActive }) => (
-                                <span
-                                    className={
-                                        isActive
-                                            ? "flex bg-white my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
-                                            : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
-                                    }
-                                >
-                                    <span>Add Post</span>
-                                </span>
-                            )}
-                        </NavLink>
-                        <NavLink to="manageUser">
-                            {({ isActive }) => (
-                                <span
-                                    className={
-                                        isActive
-                                            ? "flex bg-white my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
-                                            : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
-                                    }
-                                >
-                                    <span>Manage User</span>
-                                </span>
-                            )}
-                        </NavLink>
-                        <NavLink to="myOrder">
-                            {({ isActive }) => (
-                                <span
-                                    className={
-                                        isActive
-                                            ? "flex bg-white my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
-                                            : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
-                                    }
-                                >
-                                    <span>My Order</span>
+                                    <span>Address Book</span>
                                 </span>
                             )}
                         </NavLink>
@@ -91,7 +52,7 @@ const AdminDashboard = () => {
                                 <span
                                     className={
                                         isActive
-                                            ? "flex bg-white my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
+                                            ? "flex bg-white  my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
                                             : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
                                     }
                                 >
@@ -99,19 +60,46 @@ const AdminDashboard = () => {
                                 </span>
                             )}
                         </NavLink>
-                        <NavLink to="viewProfile">
+                        <NavLink to="coupon">
                             {({ isActive }) => (
                                 <span
                                     className={
                                         isActive
-                                            ? "flex bg-white my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
+                                            ? "flex bg-white  my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
                                             : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
                                     }
                                 >
-                                    <span>View Profile</span>
+                                    <span>Coupon</span>
                                 </span>
                             )}
                         </NavLink>
+                        <NavLink to="requestService">
+                            {({ isActive }) => (
+                                <span
+                                    className={
+                                        isActive
+                                            ? "flex bg-white  my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
+                                            : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
+                                    }
+                                >
+                                    <span>Request Service</span>
+                                </span>
+                            )}
+                        </NavLink>
+                        <NavLink to="myCancellations">
+                            {({ isActive }) => (
+                                <span
+                                    className={
+                                        isActive
+                                            ? "flex bg-white  my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
+                                            : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
+                                    }
+                                >
+                                    <span>My Cancellations</span>
+                                </span>
+                            )}
+                        </NavLink>
+                        
                     </div>
                 </div>
                 <div className="px-3 overflow-auto w-full">
