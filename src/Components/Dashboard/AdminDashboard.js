@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { MdOutlineCloseFullscreen } from 'react-icons/md';
+import AdminNavbar from '../Share/AdminNavbar/AdminNavbar';
 
 const AdminDashboard = () => {
     const [open, setOpen] = useState(false);
@@ -13,10 +14,10 @@ const AdminDashboard = () => {
             >
                 <div className='text-blue-400'><MdOutlineCloseFullscreen/></div>
             </span>
-            {/* <FinanceNavbar /> */}
-            <section className="flex w-full">
+            <AdminNavbar/>
+            <section className="flex w-full mt-1">
                 <div
-                    className={`bg-[#FFFFFF] md:w-2/12 duration-300 min-h-screen shadow-md justify-center 
+                    className={`bg-[#EBF0F4] lg:w-2/12 md:w-3/12 duration-300 min-h-screen shadow-md justify-center whitespace-nowrap 
             ease-in-out ${open ? "w-9/12" : "hidden md:flex"}`}
                 >
                     <div className="md:mx-2 lg:mx-4">
@@ -25,7 +26,7 @@ const AdminDashboard = () => {
                                 <span
                                     className={
                                         isActive
-                                            ? "flex  my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
+                                            ? "flex bg-white  my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
                                             : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
                                     }
                                 >
@@ -38,7 +39,7 @@ const AdminDashboard = () => {
                                 <span
                                     className={
                                         isActive
-                                            ? "flex  my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
+                                            ? "flex bg-white  my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
                                             : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
                                     }
                                 >
@@ -51,7 +52,7 @@ const AdminDashboard = () => {
                                 <span
                                     className={
                                         isActive
-                                            ? "flex  my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
+                                            ? "flex bg-white my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
                                             : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
                                     }
                                 >
@@ -64,7 +65,7 @@ const AdminDashboard = () => {
                                 <span
                                     className={
                                         isActive
-                                            ? "flex  my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
+                                            ? "flex bg-white my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
                                             : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
                                     }
                                 >
@@ -77,7 +78,7 @@ const AdminDashboard = () => {
                                 <span
                                     className={
                                         isActive
-                                            ? "flex  my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
+                                            ? "flex bg-white my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
                                             : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
                                     }
                                 >
@@ -90,7 +91,7 @@ const AdminDashboard = () => {
                                 <span
                                     className={
                                         isActive
-                                            ? "flex  my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
+                                            ? "flex bg-white my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
                                             : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
                                     }
                                 >
@@ -103,7 +104,7 @@ const AdminDashboard = () => {
                                 <span
                                     className={
                                         isActive
-                                            ? "flex  my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
+                                            ? "flex bg-white my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
                                             : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
                                     }
                                 >

@@ -4,11 +4,9 @@ import { Link } from 'react-router-dom';
 import logo from '../../../Images/ColorLogo.png';
 import auth from '../../firebase.init';
 import { signOut } from 'firebase/auth';
-import { Avatar, Button, Divider, IconButton, ListItemIcon, Menu, MenuItem, Tooltip, Typography } from '@mui/material';
-import { IoIosArrowDown } from 'react-icons/io';
-import { Logout, PersonAdd, Settings } from '@mui/icons-material';
+import { Avatar, Divider, IconButton, ListItemIcon, Menu, MenuItem, Tooltip } from '@mui/material';
+import { Logout, Settings } from '@mui/icons-material';
 import { Box } from '@mui/system';
-import { MdManageAccounts } from 'react-icons/md';
 
 
 const Navbar = () => {
@@ -155,9 +153,9 @@ const Navbar = () => {
                             user ?
                                 <div>
                                     <React.Fragment>
-                                        
+
                                         <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
-                                        <p>{user?.displayName}</p>
+                                            <p>{user?.displayName}</p>
                                             <Tooltip title="Account settings">
                                                 <IconButton
                                                     onClick={handleClick}
@@ -225,9 +223,8 @@ const Navbar = () => {
                                         </Menu>
                                     </React.Fragment>
                                 </div>
-
                                 :
-                                <Link to='/signIn'><span>Login</span></Link>
+                                <Link className='font-bold' to='/signIn'><span>Login</span></Link>
                         }
                     </div>
                 </div>

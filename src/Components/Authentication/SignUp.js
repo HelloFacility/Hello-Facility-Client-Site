@@ -6,6 +6,9 @@ import { FcGoogle } from 'react-icons/fc';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../Images/ColorLogo.png';
 import auth from '../firebase.init';
+import useToken from '../hook/useToken';
+import AuthenticationNavbar from '../Share/AuthenticationNavber/AuthenticationNavbar';
+import Footer from '../Share/Footer/Footer';
 import Loading from '../Share/Loading/Loading';
 
 const SignUp = () => {
@@ -21,7 +24,8 @@ const SignUp = () => {
 
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
-    // const [token] = useToken(user || gUser);
+    const [token] = useToken(user || gUser);
+    console.log(token);
 
     const navigate = useNavigate();
 
@@ -35,7 +39,7 @@ const SignUp = () => {
         signInError = <p className='text-red-500'><small>{error?.message || gError?.message || updateError?.message}</small></p>
     }
 
-    if (user || gUser) {
+    if (token) {
         navigate('/');
     }
 
@@ -47,6 +51,7 @@ const SignUp = () => {
     }
     return (
         <div>
+            <AuthenticationNavbar/>
             <div className='flex h-screen justify-center items-center'>
                 <div className="card w-96 bg-base-100 shadow-xl border-t-2 border-sky-900">
                     <div className="card-body">
@@ -138,6 +143,7 @@ const SignUp = () => {
                     </div>
                 </div>
             </div >
+            <Footer/>
         </div>
     );
 };
