@@ -2,15 +2,11 @@ import React from 'react';
 import ServiceNavbar from '../../../Share/ServiceNavbar/ServiceNavbar';
 import TopBanner from '../../../../Images/SubmenuService/SubMenuTopImg.jpg'
 import badge from '../../../../Images/SubmenuService/badge.png'
-import { MdKeyboardArrowRight } from 'react-icons/md';
-import { AiFillSafetyCertificate, AiFillSave } from 'react-icons/ai';
+import { AiFillSafetyCertificate } from 'react-icons/ai';
 import banner from '../../../../Images/SubmenuService/SubMenuTopImg.jpg'
 
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
@@ -21,7 +17,6 @@ import TimelineDot from '@mui/lab/TimelineDot';
 
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
-import { Link } from 'react-router-dom';
 
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
@@ -34,7 +29,7 @@ import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import StepContent from '@mui/material/StepContent';
-import Paper from '@mui/material/Paper';
+import Footer from '../../../Share/Footer/Footer';
 const CommercialCleaning = () => {
     const [age, setAge] = React.useState('');
 
@@ -42,55 +37,36 @@ const CommercialCleaning = () => {
         setAge(event.target.value);
     };
 
-
-
-
-
-
-
-
     const [activeStep, setActiveStep] = React.useState(0);
 
     const handleNext = () => {
-      setActiveStep((prevActiveStep) => prevActiveStep + 1);
+        setActiveStep((prevActiveStep) => prevActiveStep + 1);
     };
-  
+
     const handleBack = () => {
-      setActiveStep((prevActiveStep) => prevActiveStep - 1);
+        setActiveStep((prevActiveStep) => prevActiveStep - 1);
     };
-  
-    const handleReset = () => {
-      setActiveStep(0);
-    };
-
-
-
-
-
-
-
-
 
     const steps = [
         {
-          label: 'Select campaign settings',
-          description: `For each ad campaign that you create, you can control how much
+            label: 'Select campaign settings',
+            description: `For each ad campaign that you create, you can control how much
                     you're willing to spend on clicks and conversions, which networks
                     and geographical locations you want your ads to show on, and more.`,
         },
         {
-          label: 'Create an ad group',
-          description:
-            'An ad group contains one or more ads which target a shared set of keywords.',
+            label: 'Create an ad group',
+            description:
+                'An ad group contains one or more ads which target a shared set of keywords.',
         },
         {
-          label: 'Create an ad',
-          description: `Try out different ad text to see what brings in the most customers,
+            label: 'Create an ad',
+            description: `Try out different ad text to see what brings in the most customers,
                     and learn how to enhance your ads using features like ad extensions.
                     If you run into any problems with your ads, find out how to tell if
                     they're running and how to resolve approval issues.`,
         },
-      ];
+    ];
     return (
         <div>
             <ServiceNavbar />
@@ -122,8 +98,8 @@ const CommercialCleaning = () => {
                 </div>
             </div>
 
-            <div className='lg:flex md:flex justify-between lg:ml-20 mt-10 md:ml-10 ml-5'>
-                <div className='lg:w-3/4 md:w-3/4 lg:shadow-lg lg:mr-10 lg:p-5 md:shadow-lg md:mr-10 md:p-5'>
+            <div className='lg:flex justify-between lg:ml-20 mt-10 md:ml-10 ml-5 md:mx-16 mx-5'>
+                <div className='lg:w-3/4 md:w-full lg:shadow-lg lg:mr-10 lg:p-5 md:shadow-lg md:mr-16 md:p-5'>
                     <div>
                         <h1 className='text-2xl font-bold pb-4'>Overview</h1>
                         <h4 className='font-bold text-lg text-sky-900'>What's included?</h4>
@@ -135,145 +111,63 @@ const CommercialCleaning = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quas illo consequatur ducimus autem, molestias quae eos ea facere perspiciatis officia odit neque quasi quam nesciunt quaerat pariatur sequi laudantium culpa architecto esse nemo, sunt explicabo. Ducimus vel repellendus sint, saepe nesciunt veniam omnis commodi repudiandae earum nam, illo laudantium!</p>
                     </div>
                 </div>
-                <div className=' lg:w-1/4 md:w-1/4 lg:shadow-lg lg:mr-16 lg:p-5 md:shadow-lg md:mr-16 md:p-5'>
+                <div className=' lg:w-1/4 md:w-1/4  lg:shadow-lg lg:mr-16 lg:p-5 mt-3 md:whitespace-nowrap mx-auto'>
                     <h1 className='text-xl font-bold text-sky-900 text-center'>Request For Quote</h1>
                     <h1 className='text-base font-bold mb-4 text-yellow-500 text-center'>This Service Only for Office</h1>
-                    <form>
-                        <TextField
-                            required
-                            id="outlined-required"
-                            label="Company Name"
-                            type="text"
-                            sx={{ width: 250 }}
-                            InputLabelProps={{
-                                shrink: true,
-                            }}
-                        />
-                        <br /> <br />
-                        <TextField
-                            required
-                            id="outlined-required"
-                            label="Total Area"
-                            type="email"
-                            sx={{ width: 250 }}
-                            InputLabelProps={{
-                                shrink: true,
-                            }}
-                        />
-                        <br /> <br />
-                        <Box sx={{ minWidth: 120 }}>
-                            <FormControl fullWidth>
-                                <InputLabel id="demo-simple-select-label">Service</InputLabel>
-                                <Select
-                                    labelId="demo-simple-select-label"
-                                    id="demo-simple-select"
-                                    value={age}
-                                    label="Service"
-                                    onChange={handleChange}
-                                >
-                                    <MenuItem value={10}>One Time</MenuItem>
-                                    <MenuItem value={20}>Monthly</MenuItem>
-                                </Select>
-                            </FormControl>
-                        </Box>
-                        <br /> <br />
-                        <TextField
-                            id="date"
-                            label="Request Service Date"
-                            type="date"
-                            defaultValue="2017-05-24"
-                            sx={{ width: 250 }}
-                            InputLabelProps={{
-                                shrink: true,
-                            }}
-                        /> <br /> <br />
-                        <div className='flex justify-center'>
-                            <Button variant="outlined" size="large">Send</Button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            {/* Good to know */}
-            {/* <div>
-                <h1 className='text-3xl font-semibold ml-20 mt-10'>Good to know</h1>
-                <div className='lg:ml-20 mt-10 md:ml-10 ml-5 lg:mr-20 md:mr-10 mr-5'>
-                    <Accordion>
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel1a-content"
-                            id="panel1a-header"
-                        >
-                            <Typography className='flex items-center gap-2'>
-                                Does accessories cost included in service charge?
-                            </Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <Typography>
-                                No, additional materials and parts cost are excluded from service charge.
-                            </Typography>
-                        </AccordionDetails>
-                    </Accordion>
-                    <Accordion>
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel1a-content"
-                            id="panel1a-header"
-                        >
-                            <Typography className='flex items-center gap-2'>
-                                Does accessories cost included in service charge?
-                            </Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <Typography>
-                                No, additional materials and parts cost are excluded from service charge.
-                            </Typography>
-                        </AccordionDetails>
-                    </Accordion>
-                </div>
-            </div> */}
-
-            {/* How To Order */}
-            <div className='lg:flex md:flex items-center lg:mx-20 md:mx-16 mx-5 shadow-lg mt-5 p-5'>
-                <div className='w-1/2'>
-                    <img src={banner} alt="" />
-                </div>
-                <div>
-                    <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
-                        <h1 className='text-3xl font-bold'>How to order</h1>
-                        <div className='w-0'>
-                            <Timeline>
-                                <TimelineItem>
-                                    <TimelineSeparator>
-                                        <TimelineDot color="success" />
-                                        <TimelineConnector />
-                                    </TimelineSeparator>
-                                    <TimelineContent className='whitespace-nowrap'>
-                                        <h2 className='font-bold'>Go to order Request</h2>
-                                    </TimelineContent>
-                                </TimelineItem>
-                                <TimelineItem>
-                                    <TimelineSeparator>
-                                        <TimelineDot color="success" />
-                                        <TimelineConnector />
-                                    </TimelineSeparator>
-                                    <TimelineContent className='whitespace-nowrap'>
-                                        <h2 className='font-bold'>Book your schedule</h2>
-                                        <p>Select your convenient time slot.</p>
-                                    </TimelineContent>
-                                </TimelineItem>
-                                <TimelineItem>
-                                    <TimelineSeparator>
-                                        <TimelineDot color="success" />
-                                    </TimelineSeparator>
-                                    <TimelineContent className='whitespace-nowrap'>
-                                        <h2 className='font-bold'>Place order</h2>
-                                        <p>Confirm your order by clicking ‘Place order’.</p>
-                                    </TimelineContent>
-                                </TimelineItem>
-                            </Timeline>
-                        </div>
-
+                    <div className='lg:ml-0 md:ml-0 ml-20'>
+                        <form>
+                            <TextField
+                                required
+                                id="outlined-required"
+                                label="Company Name"
+                                type="text"
+                                sx={{ width: 250 }}
+                                InputLabelProps={{
+                                    shrink: true,
+                                }}
+                            />
+                            <br /> <br />
+                            <TextField
+                                required
+                                id="outlined-required"
+                                label="Total Area"
+                                type="email"
+                                sx={{ width: 250 }}
+                                InputLabelProps={{
+                                    shrink: true,
+                                }}
+                            />
+                            <br /> <br />
+                            <Box sx={{ width: 250 }}>
+                                <FormControl fullWidth>
+                                    <InputLabel id="demo-simple-select-label">Service</InputLabel>
+                                    <Select
+                                        labelId="demo-simple-select-label"
+                                        id="demo-simple-select"
+                                        value={age}
+                                        label="Service"
+                                        onChange={handleChange}
+                                    >
+                                        <MenuItem value={10}>One Time</MenuItem>
+                                        <MenuItem value={20}>Monthly</MenuItem>
+                                    </Select>
+                                </FormControl>
+                            </Box>
+                            <br /> <br />
+                            <TextField
+                                id="date"
+                                label="Request Service Date"
+                                type="date"
+                                defaultValue="2017-05-24"
+                                sx={{ width: 250 }}
+                                InputLabelProps={{
+                                    shrink: true,
+                                }}
+                            /> <br /> <br />
+                            <div className='lg:flex justify-center ml-20 lg:ml-0 '>
+                                <Button variant="outlined" size="large">Send</Button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -286,15 +180,6 @@ const CommercialCleaning = () => {
                     <img className='w-24 mt-5' src={badge} alt="" />
                 </div>
                 <small className='italic text-base mt-4'>We are well-equipped and well-prepared to protect your health and hygiene while serve you. Our preparations include-</small>
-
-
-
-
-
-
-
-
-
                 <Box sx={{ maxWidth: 400 }}>
                     <Stepper activeStep={activeStep} orientation="vertical">
                         {steps.map((step, index) => (
@@ -332,43 +217,7 @@ const CommercialCleaning = () => {
                             </Step>
                         ))}
                     </Stepper>
-                    {/* {activeStep === steps.length && (
-                        <Paper square elevation={0} sx={{ p: 3 }}>
-                            <Typography>All steps completed - you&apos;re finished</Typography>
-                            <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
-                                Reset
-                            </Button>
-                        </Paper>
-                    )} */}
                 </Box>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                {/* <p>1. Checked Health condition of service specialist</p>
-                <p>2. Ensuring use of masks, hand sanitisers, gloves, etc</p>
-                <p>3. Disinfecting equipments before and after the work</p>
-                <p>4. Maintaining social distancing</p> */}
             </div>
 
             {/* Service Details */}
@@ -386,7 +235,7 @@ const CommercialCleaning = () => {
             </div>
 
             {/* Review */}
-            <div className='lg:ml-20 mt-10 md:ml-10 ml-5 shadow-lg p-5'>
+            <div className='lg:mx-20 md:mx-16 mx-5 shadow-lg mt-5 p-5'>
                 <Stack spacing={1}>
                     <p className='font-bold'>Abdullah Al Habib</p>
                     <Rating name="size-medium" defaultValue={2} />
@@ -394,6 +243,54 @@ const CommercialCleaning = () => {
                     <small>Date: 19 September, 2022</small>
                 </Stack>
             </div>
+
+            {/* How To Order */}
+            <div className='lg:flex  items-center lg:mx-20 md:mx-16 mx-5 shadow-lg mt-5 p-5'>
+                <div className='lg:w-1/2 md:w-full '>
+                    <img src={banner} alt="" />
+                </div>
+                <div>
+                    <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
+                        <h1 className='text-3xl font-bold'>How to order</h1>
+                        <div className='w-0 '>
+                            <Timeline>
+                                <TimelineItem>
+                                    <TimelineSeparator>
+                                        <TimelineDot color="success" />
+                                        <TimelineConnector />
+                                    </TimelineSeparator>
+                                    <TimelineContent className='whitespace-nowrap'>
+                                        <h2 className='font-bold'>Go to order Request</h2>
+                                    </TimelineContent>
+                                </TimelineItem>
+                                <TimelineItem>
+                                    <TimelineSeparator>
+                                        <TimelineDot color="success" />
+                                        <TimelineConnector />
+                                    </TimelineSeparator>
+                                    <TimelineContent className='whitespace-nowrap'>
+                                        <h2 className='font-bold'>Book your schedule</h2>
+                                        <p>Select your convenient time slot.</p>
+                                    </TimelineContent>
+                                </TimelineItem>
+                                <TimelineItem>
+                                    <TimelineSeparator>
+                                        <TimelineDot color="success" />
+                                    </TimelineSeparator>
+                                    <TimelineContent className='whitespace-nowrap'>
+                                        <h2 className='font-bold'>Place order</h2>
+                                        <p>Confirm your order by clicking
+                                            <br />  ‘Place order’.</p>
+                                    </TimelineContent>
+                                </TimelineItem>
+                            </Timeline>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <Footer />
         </div>
     );
 };
