@@ -2,7 +2,7 @@ import { Avatar } from '@mui/material';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
-import auth from '../../../firebase.init';
+import auth from '../../../firebase.init';  
 
 const MyProfile = () => {
     const [user] = useAuthState(auth)
@@ -17,7 +17,7 @@ const MyProfile = () => {
                     <h4 className='lg:text-sm font-bold'>Full Name</h4>
                     <h4>{user?.displayName}</h4>
                 </div>
-                <div>
+                <div className=''>
                     <h4 className='lg:text-sm font-bold'>Email</h4>
                     <h4>{user?.email}</h4>
                 </div>
@@ -26,12 +26,12 @@ const MyProfile = () => {
                     <h4>{user?.phoneNumber}</h4>
                 </div>
                 <div className='lg:mt-5'>
-                    <h4 className='lg:text-sm font-bold'>Address</h4>
-                    <h4>{user?.Address}</h4>
+                    <h4 className='lg:text-sm font-bold'>City</h4>
+                    <h4>{user?.city}</h4>
                 </div>
             </div>
             <div className='mt-24'>
-                <Link className='bg-sky-900 py-3 px-20 text-white font-semibold' to='/'>Edit Profile</Link>
+                <Link className='bg-sky-900 py-3 px-20 text-white font-semibold' to='/dashboard/editProfile'>EDIT PROFILE</Link>
             </div>
         </div>
     );

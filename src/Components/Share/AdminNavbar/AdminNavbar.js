@@ -20,7 +20,7 @@ const AdminNavbar = () => {
 
 
     const [user] = useAuthState(auth)
-    console.log(user);
+    // console.log(user);
     const handleSignOut = () => {
         signOut(auth)
     }

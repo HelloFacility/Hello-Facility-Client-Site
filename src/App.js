@@ -39,6 +39,9 @@ import AddressBook from './Components/Dashboard/CustomersDashboard/AddressBook/A
 import Coupon from './Components/Dashboard/CustomersDashboard/Coupon/Coupon';
 import RequestService from './Components/Dashboard/CustomersDashboard/RequestService/RequestService';
 import MyCancellations from './Components/Dashboard/CustomersDashboard/MyCancellations/MyCancellations';
+import AddNewAddress from './Components/Dashboard/CustomersDashboard/AddressBook/AddNewAddress';
+import EditProfile from './Components/Dashboard/CustomersDashboard/MyProfile/EditProfile';
+import EditAddress from './Components/Dashboard/CustomersDashboard/AddressBook/EditAddress';
 
 function App() {
   return (
@@ -88,6 +91,9 @@ function App() {
           <Route path="coupon" element={<Coupon />}></Route>
           <Route path="requestService" element={<RequestService />}></Route>
           <Route path="myCancellations" element={<MyCancellations />}></Route>
+          <Route path="addNewAddress" element={<AddNewAddress />}></Route>
+          <Route path="editProfile" element={<EditProfile />}></Route>
+          <Route path="editAddress" element={<EditAddress />}></Route>
           {/* For Customer */}
 
         </Route>
