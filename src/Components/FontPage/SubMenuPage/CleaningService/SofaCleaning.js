@@ -7,6 +7,9 @@ import { AiFillSafetyCertificate } from 'react-icons/ai';
 import { Box, Button, FormControl, InputLabel, MenuItem, Rating, Select, Stack, Step, StepContent, StepLabel, Stepper, TextField, Typography } from '@mui/material';
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from '@mui/lab';
 import Footer from '../../../Share/Footer/Footer';
+import serviceLogo from '../../../../Images/ServiceLogo/CleaningService.png'
+import { Link } from 'react-router-dom';
+import OrderForm from '../OrderForm';
 
 
 const SofaCleaning = () => {
@@ -77,8 +80,8 @@ const SofaCleaning = () => {
                 </div>
             </div>
 
-            <div className='lg:flex justify-between lg:ml-20 mt-10 md:ml-10 ml-5 md:mx-16 mx-5'>
-                <div className='lg:w-3/4 md:w-full lg:shadow-lg lg:mr-10 lg:p-5 md:shadow-lg md:mr-16 md:p-5'>
+            <div className='lg:flex lg:mx-20 md:mx-12 mx-5 mt-10 gap-6'>
+                <div className='lg:w-1/2 shadow-md px-4 py-4 rounded-md'>
                     <div>
                         <h1 className='text-2xl font-bold pb-4'>Overview</h1>
                         <h4 className='font-bold text-lg text-sky-900'>What's included?</h4>
@@ -90,137 +93,121 @@ const SofaCleaning = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quas illo consequatur ducimus autem, molestias quae eos ea facere perspiciatis officia odit neque quasi quam nesciunt quaerat pariatur sequi laudantium culpa architecto esse nemo, sunt explicabo. Ducimus vel repellendus sint, saepe nesciunt veniam omnis commodi repudiandae earum nam, illo laudantium!</p>
                     </div>
                 </div>
-                <div className=' lg:w-1/4 md:w-1/4  lg:shadow-lg lg:mr-16 lg:p-5 mt-3 md:whitespace-nowrap mx-auto'>
+                <div className='lg:w-1/2 shadow-md px-4 py-4 rounded-md'>
                     <h1 className='text-xl font-bold text-sky-900 text-center'>Request For Quote</h1>
                     <h1 className='text-base font-bold mb-4 text-yellow-500 text-center'>This Service Only for Office</h1>
-                    <div className='lg:ml-0 md:ml-0 ml-20'>
-                        <form>
-                            <TextField
-                                required
-                                id="outlined-required"
-                                label="Company Name"
-                                type="text"
-                                sx={{ width: 250 }}
-                                InputLabelProps={{
-                                    shrink: true,
-                                }}
-                            />
-                            <br /> <br />
-                            <TextField
-                                required
-                                id="outlined-required"
-                                label="Total Area"
-                                type="email"
-                                sx={{ width: 250 }}
-                                InputLabelProps={{
-                                    shrink: true,
-                                }}
-                            />
-                            <br /> <br />
-                            <Box sx={{ width: 250 }}>
-                                <FormControl fullWidth>
-                                    <InputLabel id="demo-simple-select-label">Service</InputLabel>
-                                    <Select
-                                        labelId="demo-simple-select-label"
-                                        id="demo-simple-select"
-                                        value={age}
-                                        label="Service"
-                                        onChange={handleChange}
-                                    >
-                                        <MenuItem value={10}>One Time</MenuItem>
-                                        <MenuItem value={20}>Monthly</MenuItem>
-                                    </Select>
-                                </FormControl>
-                            </Box>
-                            <br /> <br />
-                            <TextField
-                                id="date"
-                                label="Request Service Date"
-                                type="date"
-                                defaultValue="2017-05-24"
-                                sx={{ width: 250 }}
-                                InputLabelProps={{
-                                    shrink: true,
-                                }}
-                            /> <br /> <br />
-                            <div className='lg:flex justify-center ml-20 lg:ml-0 '>
-                                <Button variant="outlined" size="large">Send</Button>
-                            </div>
-                        </form>
+                    <div className='lg:flex justify-center'>
+                        <OrderForm/>
                     </div>
                 </div>
             </div>
 
-            {/* Preparations against COVID-19 */}
-
-            <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
-                <div className='flex items-end gap-5 mb-5'>
-                    <h1 className='font-bold text-2xl'>Preparations against COVID-19</h1>
-                    <img className='w-24 mt-5' src={badge} alt="" />
-                </div>
-                <small className='italic text-base mt-4'>We are well-equipped and well-prepared to protect your health and hygiene while serve you. Our preparations include-</small>
-                <Box sx={{ maxWidth: 400 }}>
-                    <Stepper activeStep={activeStep} orientation="vertical">
-                        {steps.map((step, index) => (
-                            <Step key={step.label}>
-                                <StepLabel
-                                    optional={
-                                        index === 2 ? (
-                                            <Typography variant="caption">Last step</Typography>
-                                        ) : null
-                                    }
-                                >
-                                    {step.label}
-                                </StepLabel>
-                                <StepContent>
-                                    <Typography>{step.description}</Typography>
-                                    <Box sx={{ mb: 2 }}>
-                                        <div>
-                                            <Button
-                                                variant="contained"
-                                                onClick={handleNext}
-                                                sx={{ mt: 1, mr: 1 }}
-                                            >
-                                                {index === steps.length - 1 ? 'Finish' : 'Continue'}
-                                            </Button>
-                                            <Button
-                                                disabled={index === 0}
-                                                onClick={handleBack}
-                                                sx={{ mt: 1, mr: 1 }}
-                                            >
-                                                Back
-                                            </Button>
-                                        </div>
-                                    </Box>
-                                </StepContent>
-                            </Step>
-                        ))}
-                    </Stepper>
-                </Box>
-            </div>
 
             {/* Service Details */}
-            <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
-                <h1 className='font-bold text-2xl'>Service Details</h1>
-                <p className='pr-20 font-medium'>All your Plumbing and Sanitary-related problems will be taken care of by Sheba.xyz marketplace. We have trusted professionals who are experts in fitting, installations, and drainage related issues.</p>
+            <div className='pt-10'>
+                <div className='flex justify-center'>
+                    <img className='w-[200px]' src={serviceLogo} alt="" />
+                </div>
+                <h1 className='text-center text-3xl font-bold text-sky-900'>Carpet Cleaning</h1>
+                <div className='lg:flex lg:mx-20 md:mx-16 mx-5 mt-10 gap-12'>
+                    <div>
+                        <h2 className='font-semibold text-lg text-sky-900'>Experience with preparation of painting work</h2>
+                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on. And this is something that a professional expert painter of sheba.xyz will have expert knowledge about and experience in painting works.</p> <br />
+                        <h2 className='font-semibold text-lg text-sky-900'>Experience with preparation of painting work</h2>
+                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on. And this is something that a professional expert painter of sheba.xyz will have expert knowledge about and experience in painting works.</p>
+                    </div>
+                    <div>
+                        <h2 className='font-semibold text-lg text-sky-900'>Experience with preparation of painting work</h2>
+                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on. And this is something that a professional expert painter of sheba.xyz will have expert knowledge about and experience in painting works.</p>
+                    </div>
+                </div>
             </div>
-            <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
-                <h1 className='font-bold text-2xl'>Service Details</h1>
-                <p className='pr-20 font-medium'>All your Plumbing and Sanitary-related problems will be taken care of by Sheba.xyz marketplace. We have trusted professionals who are experts in fitting, installations, and drainage related issues.</p>
-            </div>
-            <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
-                <h1 className='font-bold text-2xl'>Service Details</h1>
-                <p className='pr-20 font-medium'>All your Plumbing and Sanitary-related problems will be taken care of by Sheba.xyz marketplace. We have trusted professionals who are experts in fitting, installations, and drainage related issues.</p>
+            <div className='lg:mx-20 md:mx-16 mx-5 mt-10'>
+                <h1>
+                    <span className='font-bold text-xl text-sky-900'>Additional Service</span> <span className='text-lg'>Recommended related service</span>
+                </h1>
+                <hr />
+                <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-10'>
+                    <div className='shadow-md px-3 py-3 rounded-md'>
+                        <div className='flex justify-center'>
+                            <img className='w-[200px]' src={serviceLogo} alt="" />
+                        </div>
+                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
+                        <div className='mt-5'>
+                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                        </div>
+                    </div>
+                    <div className='shadow-md px-3 py-3 rounded-md'>
+                        <div className='flex justify-center'>
+                            <img className='w-[200px]' src={serviceLogo} alt="" />
+                        </div>
+                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
+                        <div className='mt-5'>
+                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                        </div>
+                    </div>
+                    <div className='shadow-md px-3 py-3 rounded-md'>
+                        <div className='flex justify-center'>
+                            <img className='w-[200px]' src={serviceLogo} alt="" />
+                        </div>
+                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
+                        <div className='mt-5'>
+                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                        </div>
+                    </div>
+                    <div className='shadow-md px-3 py-3 rounded-md'>
+                        <div className='flex justify-center'>
+                            <img className='w-[200px]' src={serviceLogo} alt="" />
+                        </div>
+                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
+                        <div className='mt-5'>
+                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             {/* Review */}
-            <div className='lg:mx-20 md:mx-16 mx-5 shadow-lg mt-5 p-5'>
-                <Stack spacing={1}>
-                    <p className='font-bold'>Abdullah Al Habib</p>
-                    <Rating name="size-medium" defaultValue={2} />
-                    <small className='italic text-sm font-semibold'>The person was very expert and did his job very well</small>
-                    <small>Date: 19 September, 2022</small>
-                </Stack>
+            <div className='lg:mx-20 md:mx-16 mx-5 mt-10 pb-5'>
+                <h1 className='font-bold text-xl text-sky-900'>Service Review</h1>
+            </div>
+            <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:mx-20 md:mx-16 mx-5 gap-5'>
+                <div className='shadow-md px-3 py-5 '>
+                    <Stack spacing={1}>
+                        <p className='font-bold'>Abdullah Al Habib</p>
+                        <Rating name="size-medium" defaultValue={2} />
+                        <small className='italic text-sm font-semibold'>The person was very expert and did his job very well</small>
+                        <small>Date: 19 September, 2022</small>
+                    </Stack>
+                </div>
+                <div className='shadow-md px-3 py-5 '>
+                    <Stack spacing={1}>
+                        <p className='font-bold'>Abdullah Al Habib</p>
+                        <Rating name="size-medium" defaultValue={2} />
+                        <small className='italic text-sm font-semibold'>The person was very expert and did his job very well</small>
+                        <small>Date: 19 September, 2022</small>
+                    </Stack>
+                </div>
+                <div className='shadow-md px-3 py-5 '>
+                    <Stack spacing={1}>
+                        <p className='font-bold'>Abdullah Al Habib</p>
+                        <Rating name="size-medium" defaultValue={2} />
+                        <small className='italic text-sm font-semibold'>The person was very expert and did his job very well</small>
+                        <small>Date: 19 September, 2022</small>
+                    </Stack>
+                </div>
+                <div className='shadow-md px-3 py-5 '>
+                    <Stack spacing={1}>
+                        <p className='font-bold'>Abdullah Al Habib</p>
+                        <Rating name="size-medium" defaultValue={2} />
+                        <small className='italic text-sm font-semibold'>The person was very expert and did his job very well</small>
+                        <small>Date: 19 September, 2022</small>
+                    </Stack>
+                </div>
             </div>
 
             {/* How To Order */}

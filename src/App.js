@@ -33,7 +33,6 @@ import StationarySupply from './Components/FontPage/SubMenuPage/StationarySupply
 import Home from './Components/Home/Home';
 import MyOrder from './Components/Dashboard/CustomersDashboard/MyOrder/MyOrder';
 import MyReview from './Components/Dashboard/CustomersDashboard/MyReview/MyReview';
-import CleaningOrderForm from './Components/FontPage/SubMenuPage/CleaningService/CleaningOrderForm';
 import MyProfile from './Components/Dashboard/CustomersDashboard/MyProfile/MyProfile';
 import AddressBook from './Components/Dashboard/CustomersDashboard/AddressBook/AddressBook';
 import Coupon from './Components/Dashboard/CustomersDashboard/Coupon/Coupon';
@@ -42,6 +41,7 @@ import MyCancellations from './Components/Dashboard/CustomersDashboard/MyCancell
 import AddNewAddress from './Components/Dashboard/CustomersDashboard/AddressBook/AddNewAddress';
 import EditProfile from './Components/Dashboard/CustomersDashboard/MyProfile/EditProfile';
 import EditAddress from './Components/Dashboard/CustomersDashboard/AddressBook/EditAddress';
+import ManageOrder from './Components/Dashboard/AdminDashboard/ManageOrder/ManageOrder';
 
 function App() {
   return (
@@ -50,7 +50,6 @@ function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/addBlog' element={<AddBlog />}></Route>
         <Route path='/commercialCleaningService' element={<CommercialCleaning />}></Route>
-        <Route path='/cleaningOrder' element={<CleaningOrderForm />}></Route>
         <Route path='/regularOfficeCleaning' element={<RegularOfficeCleaning />}></Route>
         <Route path='/carpetCleaning' element={<CarpetCleaning />}></Route>
         <Route path='/sofaCleaning' element={<SofaCleaning />}></Route>
@@ -83,6 +82,7 @@ function App() {
           <Route path="addBlogs" element={<AddBlogs />}></Route>
           <Route path="addPost" element={<AddPost />}></Route>
           <Route path="manageUser" element={<ManageUser />}></Route>
+          <Route path="manageOrder" element={<ManageOrder />}></Route>
 
           {/* For Customer */}
           <Route path="myOrder" element={<MyOrder />}></Route>

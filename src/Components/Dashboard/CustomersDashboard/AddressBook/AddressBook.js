@@ -69,18 +69,7 @@ const AddressBook = () => {
 
 
                                     <td className='py-4 px-4 text-right'>
-                                        <label
-                                            for="edit-address-modal"
-                                            onClick={() =>
-                                                setAddressEdit(
-                                                    newAddress
-                                                )
-                                            }
-                                        >
-                                            <span className="font-medium text-blue-600 cursor-pointer">
-                                            Edit
-                                            </span>
-                                        </label>
+                                        
                                     </td>
                                 </tr>
                             ))}
@@ -93,9 +82,11 @@ const AddressBook = () => {
                 <Link className='bg-sky-900 py-3 px-20 text-white font-semibold mt-24 cursor-pointer' to='/dashboard/addNewAddress'>+ ADD NEW ADDRESS</Link>
             </div>
 
-            <EditAddress
+            {/* <EditAddress
                 addressEdit={addressEdit}
-            ></EditAddress>
+            ></EditAddress> */}
+
+
         </div>
     );
 };

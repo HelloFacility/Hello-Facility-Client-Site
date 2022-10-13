@@ -35,7 +35,7 @@ const AdminDashboard = () => {
                             )}
                         </NavLink>
                         <NavLink to="addressBook">
-                            {({ isActive }) => (
+                            {({ isActive }) => (    
                                 <span
                                     className={
                                         isActive
@@ -96,6 +96,32 @@ const AdminDashboard = () => {
                                     }
                                 >
                                     <span>My Cancellations</span>
+                                </span>
+                            )}
+                        </NavLink>
+                        <NavLink to="manageOrder">
+                            {({ isActive }) => (
+                                <span
+                                    className={
+                                        isActive
+                                            ? "flex bg-white  my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
+                                            : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
+                                    }
+                                >
+                                    <span>Manage Order</span>
+                                </span>
+                            )}
+                        </NavLink>
+                        <NavLink to="myOrder">
+                            {({ isActive }) => (
+                                <span
+                                    className={
+                                        isActive
+                                            ? "flex bg-white  my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
+                                            : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
+                                    }
+                                >
+                                    <span>My Order</span>
                                 </span>
                             )}
                         </NavLink>

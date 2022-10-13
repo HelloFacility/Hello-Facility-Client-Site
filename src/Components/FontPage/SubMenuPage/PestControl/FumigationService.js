@@ -7,6 +7,8 @@ import { AiFillSafetyCertificate } from 'react-icons/ai';
 import { Box, Button, FormControl, InputLabel, MenuItem, Rating, Select, Stack, Step, StepContent, StepLabel, Stepper, TextField, Typography } from '@mui/material';
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from '@mui/lab';
 import Footer from '../../../Share/Footer/Footer';
+import { Link } from 'react-router-dom';
+import serviceLogo from '../../../../Images/ServiceLogo/CleaningService.png'
 
 const FumigationService = () => {
     const [age, setAge] = React.useState('');
@@ -15,36 +17,7 @@ const FumigationService = () => {
         setAge(event.target.value);
     };
 
-    const [activeStep, setActiveStep] = React.useState(0);
 
-    const handleNext = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    };
-
-    const handleBack = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep - 1);
-    };
-
-    const steps = [
-        {
-            label: 'Select campaign settings',
-            description: `For each ad campaign that you create, you can control how much
-                    you're willing to spend on clicks and conversions, which networks
-                    and geographical locations you want your ads to show on, and more.`,
-        },
-        {
-            label: 'Create an ad group',
-            description:
-                'An ad group contains one or more ads which target a shared set of keywords.',
-        },
-        {
-            label: 'Create an ad',
-            description: `Try out different ad text to see what brings in the most customers,
-                    and learn how to enhance your ads using features like ad extensions.
-                    If you run into any problems with your ads, find out how to tell if
-                    they're running and how to resolve approval issues.`,
-        },
-    ];
     return (
         <div>
             <ServiceNavbar />
@@ -150,76 +123,112 @@ const FumigationService = () => {
                 </div>
             </div>
 
-            {/* Preparations against COVID-19 */}
-
-            <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
-                <div className='flex items-end gap-5 mb-5'>
-                    <h1 className='font-bold text-2xl'>Preparations against COVID-19</h1>
-                    <img className='w-24 mt-5' src={badge} alt="" />
-                </div>
-                <small className='italic text-base mt-4'>We are well-equipped and well-prepared to protect your health and hygiene while serve you. Our preparations include-</small>
-                <Box sx={{ maxWidth: 400 }}>
-                    <Stepper activeStep={activeStep} orientation="vertical">
-                        {steps.map((step, index) => (
-                            <Step key={step.label}>
-                                <StepLabel
-                                    optional={
-                                        index === 2 ? (
-                                            <Typography variant="caption">Last step</Typography>
-                                        ) : null
-                                    }
-                                >
-                                    {step.label}
-                                </StepLabel>
-                                <StepContent>
-                                    <Typography>{step.description}</Typography>
-                                    <Box sx={{ mb: 2 }}>
-                                        <div>
-                                            <Button
-                                                variant="contained"
-                                                onClick={handleNext}
-                                                sx={{ mt: 1, mr: 1 }}
-                                            >
-                                                {index === steps.length - 1 ? 'Finish' : 'Continue'}
-                                            </Button>
-                                            <Button
-                                                disabled={index === 0}
-                                                onClick={handleBack}
-                                                sx={{ mt: 1, mr: 1 }}
-                                            >
-                                                Back
-                                            </Button>
-                                        </div>
-                                    </Box>
-                                </StepContent>
-                            </Step>
-                        ))}
-                    </Stepper>
-                </Box>
-            </div>
 
             {/* Service Details */}
-            <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
-                <h1 className='font-bold text-2xl'>Service Details</h1>
-                <p className='pr-20 font-medium'>All your Plumbing and Sanitary-related problems will be taken care of by Sheba.xyz marketplace. We have trusted professionals who are experts in fitting, installations, and drainage related issues.</p>
+            <div className='pt-10'>
+                <div className='flex justify-center'>
+                    <img className='w-[200px]' src={serviceLogo} alt="" />
+                </div>
+                <h1 className='text-center text-3xl font-bold text-sky-900'>Carpet Cleaning</h1>
+                <div className='lg:flex lg:mx-20 md:mx-16 mx-5 mt-10 gap-12'>
+                    <div>
+                        <h2 className='font-semibold text-lg text-sky-900'>Experience with preparation of painting work</h2>
+                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on. And this is something that a professional expert painter of sheba.xyz will have expert knowledge about and experience in painting works.</p> <br />
+                        <h2 className='font-semibold text-lg text-sky-900'>Experience with preparation of painting work</h2>
+                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on. And this is something that a professional expert painter of sheba.xyz will have expert knowledge about and experience in painting works.</p>
+                    </div>
+                    <div>
+                        <h2 className='font-semibold text-lg text-sky-900'>Experience with preparation of painting work</h2>
+                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on. And this is something that a professional expert painter of sheba.xyz will have expert knowledge about and experience in painting works.</p>
+                    </div>
+                </div>
             </div>
-            <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
-                <h1 className='font-bold text-2xl'>Service Details</h1>
-                <p className='pr-20 font-medium'>All your Plumbing and Sanitary-related problems will be taken care of by Sheba.xyz marketplace. We have trusted professionals who are experts in fitting, installations, and drainage related issues.</p>
-            </div>
-            <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
-                <h1 className='font-bold text-2xl'>Service Details</h1>
-                <p className='pr-20 font-medium'>All your Plumbing and Sanitary-related problems will be taken care of by Sheba.xyz marketplace. We have trusted professionals who are experts in fitting, installations, and drainage related issues.</p>
+            <div className='lg:mx-20 md:mx-16 mx-5 mt-10'>
+                <h1>
+                    <span className='font-bold text-xl text-sky-900'>Additional Service</span> <span className='text-lg'>Recommended related service</span>
+                </h1>
+                <hr />
+                <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-10'>
+                    <div className='shadow-md px-3 py-3 rounded-md'>
+                        <div className='flex justify-center'>
+                            <img className='w-[200px]' src={serviceLogo} alt="" />
+                        </div>
+                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
+                        <div className='mt-5'>
+                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                        </div>
+                    </div>
+                    <div className='shadow-md px-3 py-3 rounded-md'>
+                        <div className='flex justify-center'>
+                            <img className='w-[200px]' src={serviceLogo} alt="" />
+                        </div>
+                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
+                        <div className='mt-5'>
+                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                        </div>
+                    </div>
+                    <div className='shadow-md px-3 py-3 rounded-md'>
+                        <div className='flex justify-center'>
+                            <img className='w-[200px]' src={serviceLogo} alt="" />
+                        </div>
+                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
+                        <div className='mt-5'>
+                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                        </div>
+                    </div>
+                    <div className='shadow-md px-3 py-3 rounded-md'>
+                        <div className='flex justify-center'>
+                            <img className='w-[200px]' src={serviceLogo} alt="" />
+                        </div>
+                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
+                        <div className='mt-5'>
+                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             {/* Review */}
-            <div className='lg:mx-20 md:mx-16 mx-5 shadow-lg mt-5 p-5'>
-                <Stack spacing={1}>
-                    <p className='font-bold'>Abdullah Al Habib</p>
-                    <Rating name="size-medium" defaultValue={2} />
-                    <small className='italic text-sm font-semibold'>The person was very expert and did his job very well</small>
-                    <small>Date: 19 September, 2022</small>
-                </Stack>
+            <div className='lg:mx-20 md:mx-16 mx-5 mt-10 pb-5'>
+                <h1 className='font-bold text-xl text-sky-900'>Service Review</h1>
+            </div>
+            <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:mx-20 md:mx-16 mx-5 gap-5'>
+                <div className='shadow-md px-3 py-5 '>
+                    <Stack spacing={1}>
+                        <p className='font-bold'>Abdullah Al Habib</p>
+                        <Rating name="size-medium" defaultValue={2} />
+                        <small className='italic text-sm font-semibold'>The person was very expert and did his job very well</small>
+                        <small>Date: 19 September, 2022</small>
+                    </Stack>
+                </div>
+                <div className='shadow-md px-3 py-5 '>
+                    <Stack spacing={1}>
+                        <p className='font-bold'>Abdullah Al Habib</p>
+                        <Rating name="size-medium" defaultValue={2} />
+                        <small className='italic text-sm font-semibold'>The person was very expert and did his job very well</small>
+                        <small>Date: 19 September, 2022</small>
+                    </Stack>
+                </div>
+                <div className='shadow-md px-3 py-5 '>
+                    <Stack spacing={1}>
+                        <p className='font-bold'>Abdullah Al Habib</p>
+                        <Rating name="size-medium" defaultValue={2} />
+                        <small className='italic text-sm font-semibold'>The person was very expert and did his job very well</small>
+                        <small>Date: 19 September, 2022</small>
+                    </Stack>
+                </div>
+                <div className='shadow-md px-3 py-5 '>
+                    <Stack spacing={1}>
+                        <p className='font-bold'>Abdullah Al Habib</p>
+                        <Rating name="size-medium" defaultValue={2} />
+                        <small className='italic text-sm font-semibold'>The person was very expert and did his job very well</small>
+                        <small>Date: 19 September, 2022</small>
+                    </Stack>
+                </div>
             </div>
 
             {/* How To Order */}
