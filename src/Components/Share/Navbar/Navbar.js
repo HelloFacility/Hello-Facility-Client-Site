@@ -9,6 +9,7 @@ import { Box } from '@mui/system';
 import { Avatar, Button, Divider, IconButton, ListItemIcon, Menu, MenuItem, Popover, Tooltip, Typography } from '@mui/material';
 import { AiOutlineMenu } from 'react-icons/ai';
 import './NavbarStyle.css'
+import { MdKeyboardArrowDown } from 'react-icons/md';
 
 const Navbar = () => {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -119,7 +120,7 @@ const Navbar = () => {
                         <Link to='/'>Home</Link>
                     </div>
                     <div className="dropdown">
-                        <button className="dropbtn">Service</button>
+                        <button className="dropbtn flex items-center">Service <MdKeyboardArrowDown/></button>
                         <div className="dropdown-content">
                             <div className='whitespace-nowrap'>
                                 <ul className='flex px-10 gap-5 py-3'>
