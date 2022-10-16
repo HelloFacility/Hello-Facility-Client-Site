@@ -42,7 +42,7 @@ const AddressBook = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {newAddressBook.map((newAddress) => (
+                            {newAddressBook.slice(0, 1).map((newAddress) => (
 
                                 <tr
                                     key={newAddress._id}
