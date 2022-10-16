@@ -7,16 +7,16 @@ const ManageUser = () => {
  
     return (
         <div>
-            <h2>Total Users: {user?.length} </h2>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
-                    <thead>
+            <h2 className='py-3 px-3'>Total Users: {user?.length} </h2>
+            <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead className='text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
                         <tr className='text-left'>
-                            <th >User Name</th>
-                            <th >Email</th>
-                            <th >Phone</th>
-                            <th>User Status</th>
-                            <th>Remove Button</th>
+                            <th scope="col" class="py-3 px-6">User Name</th>
+                            <th scope="col" class="py-3 px-6">Email</th>
+                            <th scope="col" class="py-3 px-6">Phone</th>
+                            <th scope="col" class="py-3 px-6">User Status</th>
+                            <th scope="col" class="py-3 px-6">Remove Button</th>
                         </tr>
                     </thead>
                     

@@ -3,26 +3,20 @@ import Swal from 'sweetalert2';
 
 const UserTable = ({ user }) => {
     const { email, role, name, phone } = user
+
     const makeAdmin = () => {
-        const url = `https://secret-sierra-86800.herokuapp.com/user/admin/${email}`
-        fetch(url, {
+        fetch(`http://localhost:5000/user/admin/${email}`, {
             method: 'PUT',
             headers: {
-                'content-type': 'application/json',
-                // authorization: `Bearer ${localStorage.getItem('accessToken')}`
-            },
+                "content-type": "application/json",
+            }
         })
-            .then(res => res.json())
-            .then(data => {
-                console.log('success', data);
-                Swal.fire(
-                    'Good job!',
-                    'Profile Updated!',
-                    'success'
-                  )
-                //   window.location.reload();
-            })
+        .then(res => res.json())
+        .then(() => {
+            window.location.reload();
+        })
     }
+
 
     const handleUserDelete = id => {
         const proceed = window.confirm('Do you want to delete this user?')
@@ -45,11 +39,11 @@ const UserTable = ({ user }) => {
     }
     return (
         <tr>
-            <td>{name}</td>
-            <td>{email}</td>
-            <td>{phone}</td>
-            <td>{role !== 'admin' && <button onClick={makeAdmin} className="border px-3 py-2 rounded-xl bg-sky-900 text-white font-semibold">Make Admin</button>}</td>
-            <td><button onClick={handleUserDelete} className="border px-3 py-2 rounded-xl bg-red-500 text-white font-semibold">Remove User</button></td>
+            <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">{name}</td>
+            <td class="py-4 px-6">{email}</td>
+            <td class="py-4 px-6">{phone}</td>
+            <td class="py-4 px-6">{role !== 'admin' && <button onClick={makeAdmin} className="border px-3 py-1 rounded-3xl bg-green-600 text-white font-semibold">Make Admin</button>}</td>
+            <td class="py-4 px-6"><button onClick={handleUserDelete} className="border px-3 py-1 rounded-3xl bg-red-500 text-white font-semibold">Remove</button></td>
         </tr>
     );
 };
