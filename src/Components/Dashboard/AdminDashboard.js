@@ -73,7 +73,7 @@ const AdminDashboard = () => {
                                 </span>
                             )}
                         </NavLink>
-                        <NavLink to="requestService">
+                        <NavLink to="addBlogs">
                             {({ isActive }) => (
                                 <span
                                     className={
@@ -82,20 +82,7 @@ const AdminDashboard = () => {
                                             : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
                                     }
                                 >
-                                    <span>Request Service</span>
-                                </span>
-                            )}
-                        </NavLink>
-                        <NavLink to="myCancellations">
-                            {({ isActive }) => (
-                                <span
-                                    className={
-                                        isActive
-                                            ? "flex bg-white  my-4 px-6 p-2 duration-300 transition cursor-pointer rounded bg-custom-cyan-100 border-l-4 border-blue-400"
-                                            : "hover:bg-custom-cyan-100 bg-custom-gray flex  my-4 px-6 p-2"
-                                    }
-                                >
-                                    <span>My Cancellations</span>
+                                    <span>Add Blog</span>
                                 </span>
                             )}
                         </NavLink>

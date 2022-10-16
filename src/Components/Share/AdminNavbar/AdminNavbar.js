@@ -86,15 +86,9 @@ const AdminNavbar = () => {
                                     anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
                                 >
                                     <MenuItem>
-                                        <Avatar src={user?.photoURL} /> My Profile
+                                        <Avatar src={user?.photoURL} /> <Link to='/dashboard'>My Profile</Link>
                                     </MenuItem>
                                     <Divider />
-                                    <MenuItem>
-                                        <ListItemIcon>
-                                            <Settings fontSize="small" />
-                                        </ListItemIcon>
-                                        My Account
-                                    </MenuItem>
                                     <MenuItem>
                                         <ListItemIcon>
                                             <Logout fontSize="small" />
