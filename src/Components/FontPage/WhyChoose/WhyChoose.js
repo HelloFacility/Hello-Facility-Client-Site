@@ -8,7 +8,7 @@ const WhyChoose = () => {
                 <div className="flex items-center justify-between h-full w-full absolute z-0">
                     <div className="w-1/3 bg-white h-full" />
                 </div>
-                <div className="xl:px-20 px-8 pt-10 2xl:mx-auto 2xl:container relative z-40">
+                <div className="xl:px-20 px-8 pt-0 2xl:mx-auto 2xl:container relative z-40">
                     <h1 className="text-3xl font-bold xl:block leading-tight text-sky-900">
                         Why Choose Us
                     </h1>
@@ -19,8 +19,17 @@ const WhyChoose = () => {
                             </div>
                             <div className="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 mt-4 flex flex-col justify-between ">
                                 <div>
-                                    <h1 className="text-2xl font-semibold xl:leading-loose text-gray-800">Some of the best work that was done!</h1>
-                                    <p className="text-base font-medium leading-6 mt-4 text-gray-600">Our core values are at the heart of all that we do. They are integrated into our daily work lives and help us to remember our customers always comes first, the last thank you should always comes from us.</p>
+                                    <h1 className="text-2xl font-semibold xl:leading-loose text-gray-800">Why Choose Us</h1>
+                                    <p className="text-base font-medium leading-6 mt-4 text-gray-600">There are thousands of service company available in Bangladesh. What sets Hello Facility apart from the competition?</p>
+                                    <ul className='list-disc'>
+                                        <li>We adjust the service in accordance with client requests.</li>
+                                        <li>The tools we use for professional cleaning are safe for both people and animals.</li>
+                                        <li>We constantly practice good hygiene.</li>
+                                        <li>The Hello facility has a total commitment to quality, integrity, and client satisfaction.</li>
+                                        <li>At the hello facility, all of the service personnel are trained.</li>
+                                        <li>We adjust the service in accordance with client requests.</li>
+                                        <li>We check the backgrounds of all the service providers we register.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
