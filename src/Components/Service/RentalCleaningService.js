@@ -20,16 +20,16 @@ const RentalCleaningService = () => {
                     </div>
                 </div>
                 <div className='lg:w-3/5'>
-                    <h1 className="text-2xl font-semibold xl:leading-loose text-gray-800 mt-5">Some of the best work that was done!</h1>
-                    <p className="text-base font-medium leading-6 mt-4 mb-5 text-gray-600">Our core values are at the heart of all that we do. They are integrated into our daily work lives and help us to remember our customers always comes first, the last thank you should always comes from us.</p>
-                    <Link className='font-bold shadow-sm bg-gray-100 px-4 py-3 rounded-md' to='/'>Learn More</Link>
+                    <h1 className="text-2xl font-semibold xl:leading-loose text-gray-800 mt-5">Car Rental</h1>
+                    <p className="text-base font-medium leading-6 mt-4 mb-5 text-gray-600">Considering a trip? Your journey can be more enjoyable with the help of the facility's car rental service. We make every effort to offer first-rate service, whether it is for airport pick-up and drop-off or vacation travel services. Furthermore, we put a high priority on keeping you safe. Call now to make a service reservation.</p>
+                    {/* <Link className='font-bold shadow-sm bg-gray-100 px-4 py-3 rounded-md' to='/'>Learn More</Link> */}
                 </div>
             </div>
             <div className='lg:flex  lg:mx-20 md:mx-10 mx-5 gap-10 mt-10'>
                 <div className='lg:w-3/5'>
-                    <h1 className="text-2xl font-semibold xl:leading-loose text-gray-800">Some of the best work that was done!</h1>
-                    <p className="text-base font-medium leading-6 mt-4 mb-5 text-gray-600">Our core values are at the heart of all that we do. They are integrated into our daily work lives and help us to remember our customers always comes first, the last thank you should always comes from us.</p>
-                    <Link className='font-bold shadow-sm bg-gray-100 px-4 py-3 rounded-md' to='/'>Learn More</Link>
+                    <h1 className="text-2xl font-semibold xl:leading-loose text-gray-800">Cleaning Services</h1>
+                    <p className="text-base font-medium leading-6 mt-4 mb-5 text-gray-600">Do you find deep cleaning your home to be a hassle? In that case, relax! Hello, help is on the way! We offer a range of cleaning services, including floor scrubbing, deep kitchen, bathroom, and sofa cleaning, as well as carpet washing. Additionally, we'll clean your office as you request.</p>
+                    <Link className='font-bold shadow-sm bg-gray-100 px-4 py-3 rounded-md' to='/contactUs'>Let's go over this more.</Link>
                 </div>
                 <div className='lg:w-2/5 md:full pt-5'>
                     <img src={CarRenralBanner} alt="" />
