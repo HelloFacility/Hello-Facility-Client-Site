@@ -2,22 +2,13 @@ import React from 'react';
 import ServiceNavbar from '../../../Share/ServiceNavbar/ServiceNavbar';
 import TopBanner from '../../../../Images/SubmenuService/SubMenuTopImg.jpg'
 import badge from '../../../../Images/SubmenuService/badge.png'
-import banner from '../../../../Images/SubmenuService/SubMenuTopImg.jpg'
 import { AiFillSafetyCertificate } from 'react-icons/ai';
-import { Box, Button, FormControl, InputLabel, MenuItem, Rating, Select, Stack, Step, StepContent, StepLabel, Stepper, TextField, Typography } from '@mui/material';
-import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from '@mui/lab';
 import Footer from '../../../Share/Footer/Footer';
-import { Link } from 'react-router-dom';
 import serviceLogo from '../../../../Images/ServiceLogo/CleaningService.png'
+import { Link } from 'react-router-dom';
+import { Rating, Stack } from '@mui/material';
 
-const OnDemandService = () => {
-    const [age, setAge] = React.useState('');
-
-    const handleChange = (event) => {
-        setAge(event.target.value);
-    };
-
-
+const PestControl = () => {
     return (
         <div>
             <ServiceNavbar />
@@ -49,8 +40,8 @@ const OnDemandService = () => {
                 </div>
             </div>
 
-            <div className='lg:flex justify-between lg:ml-20 mt-10 md:ml-10 ml-5 md:mx-16 mx-5'>
-                <div className='lg:w-3/4 md:w-full lg:shadow-lg lg:mr-10 lg:p-5 md:shadow-lg md:mr-16 md:p-5'>
+            <div className='lg:flex lg:mx-20 md:mx-12 mx-5 mt-10 gap-6'>
+                <div className='w-full shadow-md px-4 py-4 rounded-md'>
                     <div>
                         <h1 className='text-2xl font-bold pb-4'>Overview</h1>
                         <h4 className='font-bold text-lg text-sky-900'>What's included?</h4>
@@ -60,65 +51,6 @@ const OnDemandService = () => {
                     <div>
                         <h4 className='font-bold text-lg text-sky-900'>What's excluded?</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quas illo consequatur ducimus autem, molestias quae eos ea facere perspiciatis officia odit neque quasi quam nesciunt quaerat pariatur sequi laudantium culpa architecto esse nemo, sunt explicabo. Ducimus vel repellendus sint, saepe nesciunt veniam omnis commodi repudiandae earum nam, illo laudantium!</p>
-                    </div>
-                </div>
-                <div className=' lg:w-1/4 md:w-1/4  lg:shadow-lg lg:mr-16 lg:p-5 mt-3 md:whitespace-nowrap mx-auto'>
-                    <h1 className='text-xl font-bold text-sky-900 text-center'>Request For Quote</h1>
-                    <h1 className='text-base font-bold mb-4 text-yellow-500 text-center'>This Service Only for Office</h1>
-                    <div className='lg:ml-0 md:ml-0 ml-20'>
-                        <form>
-                            <TextField
-                                required
-                                id="outlined-required"
-                                label="Company Name"
-                                type="text"
-                                sx={{ width: 250 }}
-                                InputLabelProps={{
-                                    shrink: true,
-                                }}
-                            />
-                            <br /> <br />
-                            <TextField
-                                required
-                                id="outlined-required"
-                                label="Total Area"
-                                type="email"
-                                sx={{ width: 250 }}
-                                InputLabelProps={{
-                                    shrink: true,
-                                }}
-                            />
-                            <br /> <br />
-                            <Box sx={{ width: 250 }}>
-                                <FormControl fullWidth>
-                                    <InputLabel id="demo-simple-select-label">Service</InputLabel>
-                                    <Select
-                                        labelId="demo-simple-select-label"
-                                        id="demo-simple-select"
-                                        value={age}
-                                        label="Service"
-                                        onChange={handleChange}
-                                    >
-                                        <MenuItem value={10}>One Time</MenuItem>
-                                        <MenuItem value={20}>Monthly</MenuItem>
-                                    </Select>
-                                </FormControl>
-                            </Box>
-                            <br /> <br />
-                            <TextField
-                                id="date"
-                                label="Request Service Date"
-                                type="date"
-                                defaultValue="2017-05-24"
-                                sx={{ width: 250 }}
-                                InputLabelProps={{
-                                    shrink: true,
-                                }}
-                            /> <br /> <br />
-                            <div className='lg:flex justify-center ml-20 lg:ml-0 '>
-                                <Button variant="outlined" size="large">Send</Button>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -230,56 +162,9 @@ const OnDemandService = () => {
                     </Stack>
                 </div>
             </div>
-
-            {/* How To Order */}
-            <div className='lg:flex  items-center lg:mx-20 md:mx-16 mx-5 shadow-lg mt-5 p-5'>
-                <div className='lg:w-1/2 md:w-full '>
-                    <img src={banner} alt="" />
-                </div>
-                <div>
-                    <div className='lg:ml-20 mt-10 md:ml-10 ml-5'>
-                        <h1 className='text-3xl font-bold'>How to order</h1>
-                        <div className='w-0 '>
-                            <Timeline>
-                                <TimelineItem>
-                                    <TimelineSeparator>
-                                        <TimelineDot color="success" />
-                                        <TimelineConnector />
-                                    </TimelineSeparator>
-                                    <TimelineContent className='whitespace-nowrap'>
-                                        <h2 className='font-bold'>Go to order Request</h2>
-                                    </TimelineContent>
-                                </TimelineItem>
-                                <TimelineItem>
-                                    <TimelineSeparator>
-                                        <TimelineDot color="success" />
-                                        <TimelineConnector />
-                                    </TimelineSeparator>
-                                    <TimelineContent className='whitespace-nowrap'>
-                                        <h2 className='font-bold'>Book your schedule</h2>
-                                        <p>Select your convenient time slot.</p>
-                                    </TimelineContent>
-                                </TimelineItem>
-                                <TimelineItem>
-                                    <TimelineSeparator>
-                                        <TimelineDot color="success" />
-                                    </TimelineSeparator>
-                                    <TimelineContent className='whitespace-nowrap'>
-                                        <h2 className='font-bold'>Place order</h2>
-                                        <p>Confirm your order by clicking
-                                            <br />  ‘Place order’.</p>
-                                    </TimelineContent>
-                                </TimelineItem>
-                            </Timeline>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
             <Footer />
         </div>
     );
 };
 
-export default OnDemandService;
+export default PestControl;
