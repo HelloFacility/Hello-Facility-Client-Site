@@ -19,7 +19,7 @@ const Carousel = () => {
                         <br />Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
                 </div>
                 <div className='flex justify-center pt-10'>
-                    <Link className='font-bold shadow-sm bg-gray-100 px-4 py-3 rounded-md' to='/'>Learn More</Link>
+                    <Link className='font-bold shadow-sm bg-gray-100 px-4 py-3 rounded-md' to='/contactUs'>Learn More</Link>
                 </div>
             </div>
         </div>

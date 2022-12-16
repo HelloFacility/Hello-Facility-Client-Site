@@ -10,7 +10,7 @@ import { Rating, Stack } from '@mui/material';
 
 const CarRental = () => {
     return (
-        <div>
+        <div className='text-justify'>
             <ServiceNavbar />
             <div className='h-96 mt-1' style={{
                 backgroundImage: `url(${TopBanner})`

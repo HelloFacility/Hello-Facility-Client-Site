@@ -10,7 +10,7 @@ import OurService from '../FontPage/OurService/OurService';
 
 const Home = () => {
     return (
-        <div>
+        <div className='text-justify'>
             <Navbar />
             <Carousel />
             <RentalCleaningService />

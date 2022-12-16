@@ -33,7 +33,6 @@ function App() {
         <Route path='/cleaning-service' element={<CleaningService/>}></Route>
         <Route path='/pest-control' element={<PestControl/>}></Route>
         <Route path='/car-rental' element={<CarRental/>}></Route>
-
       </Routes>
     </div>
   );

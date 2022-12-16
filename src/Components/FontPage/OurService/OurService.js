@@ -8,15 +8,14 @@ import { CardActionArea } from '@mui/material';
 const OurService = () => {
     return (
         <div>
-            <div className='lg:flex md:flex items-center justify-between lg:mx-20 md:mx-16 mx-5 mt-10'>
+            <div className='items-center justify-between lg:mx-20 md:mx-16 mx-5 mt-10'>
                 <h1 className='text-3xl font-bold xl:block leading-tight text-sky-900'>Recommended For You</h1>
-                <h2 className='font-bold'>All Service</h2>
             </div>
             <div>
                 <div className='lg:flex md:flex gap-5 lg:mx-20 md:mx-16 mx-5 my-10'>
                     <div>
                         <div>
-                            <Link to='/sdf'>
+                            <Link to='/pest-control'>
                                 <Card sx={{ maxWidth: 345 }}>
                                     <CardActionArea>
                                         <CardMedia
@@ -26,7 +25,7 @@ const OurService = () => {
                                             alt="green iguana"
                                         />
                                         <CardContent>
-                                            <h2 className='font-bold text-xl text-center'>Car Rental</h2>
+                                            <h2 className='font-bold text-xl text-center pb-7'>Pest Control</h2>
                                         </CardContent>
                                     </CardActionArea>
                                 </Card>
@@ -35,7 +34,7 @@ const OurService = () => {
                     </div>
                     <div>
                         <div>
-                            <Link to='/sdf'>
+                            <Link to='/commercialCleaningService'>
                                 <Card sx={{ maxWidth: 345 }}>
                                     <CardActionArea>
                                         <CardMedia
@@ -45,7 +44,7 @@ const OurService = () => {
                                             alt="green iguana"
                                         />
                                         <CardContent>
-                                            <h2 className='font-bold text-xl text-center'>Car Rental</h2>
+                                            <h2 className='font-bold text-xl text-center'>Commercial Cleaning Service</h2>
                                         </CardContent>
                                     </CardActionArea>
                                 </Card>
@@ -54,7 +53,7 @@ const OurService = () => {
                     </div>
                     <div>
                         <div>
-                            <Link to='/sdf'>
+                            <Link to='/kitchen-cleaning'>
                                 <Card sx={{ maxWidth: 345 }}>
                                     <CardActionArea>
                                         <CardMedia
@@ -64,7 +63,7 @@ const OurService = () => {
                                             alt="green iguana"
                                         />
                                         <CardContent>
-                                            <h2 className='font-bold text-xl text-center'>Car Rental</h2>
+                                            <h2 className='font-bold text-xl text-center pb-7'>Kitchen Cleaning</h2>
                                         </CardContent>
                                     </CardActionArea>
                                 </Card>
@@ -73,7 +72,7 @@ const OurService = () => {
                     </div>
                     <div>
                         <div>
-                            <Link to='/sdf'>
+                            <Link to='/buildingManagement'>
                                 <Card sx={{ maxWidth: 345 }}>
                                     <CardActionArea>
                                         <CardMedia
@@ -83,7 +82,7 @@ const OurService = () => {
                                             alt="green iguana"
                                         />
                                         <CardContent>
-                                            <h2 className='font-bold text-xl text-center'>Car Rental</h2>
+                                            <h2 className='font-bold text-xl text-center'>Building Management System</h2>
                                         </CardContent>
                                     </CardActionArea>
                                 </Card>

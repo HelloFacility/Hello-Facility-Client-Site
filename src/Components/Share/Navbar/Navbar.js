@@ -36,7 +36,7 @@ const Navbar = () => {
                                                 </li>
                                                 <li>
                                                     <Link to='/car-rental'>Car Rental</Link>
-                                                    <Link to='/buildingManagement'>Building Management Solution</Link>
+                                                    <Link to='/buildingManagement'>Building Management System</Link>
                                                 </li>
                                             </div>
                                         </ul>
@@ -76,7 +76,7 @@ const Navbar = () => {
                                         <div>
                                             <li>
                                                 <Link to='/car-rental'>Car Rental</Link>
-                                                <Link to='/buildingManagement'>Building Management Solution</Link>
+                                                <Link to='/buildingManagement'>Building Management System </Link>
                                             </li>
                                         </div>
                                     </ul>

@@ -34,11 +34,11 @@ const WhyChoose = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='bg-slate-300 py-1 px-1 mt-5'>
+                    <div className='py-1 px-1 mt-5'>
                         <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4 items-center'>
-                            <div className='bg-slate-50 py-6 text-center'>
+                            <div className='bg-slate-100 py-6 text-center text-[#F7941E] shadow-md rounded-md'>
                                 <div className='font-bold text-5xl'>
-                                    <CountUp start={0} end={12} delay={2}>
+                                    <CountUp start={20} end={42} delay={2}>
                                         {({ countUpRef }) => (
                                             <div>
                                                 <span ref={countUpRef} />+
@@ -47,12 +47,12 @@ const WhyChoose = () => {
                                     </CountUp>
                                 </div>
                                 <div className='text-xl font-semibold'>
-                                    Service Providers
+                                    Ongoing Projects
                                 </div>
                             </div>
-                            <div className='bg-slate-50 py-6 text-center'>
+                            <div className='bg-slate-50 py-6 text-center text-[#0F75BC] shadow-md rounded-md'>
                                 <div className='font-bold text-5xl'>
-                                    <CountUp start={0} end={12} delay={2}>
+                                    <CountUp start={70} end={90} delay={2}>
                                         {({ countUpRef }) => (
                                             <div>
                                                 <span ref={countUpRef} />+
@@ -61,12 +61,12 @@ const WhyChoose = () => {
                                     </CountUp>
                                 </div>
                                 <div className='text-xl font-semibold'>
-                                    Service Providers
+                                    Expert Team Members
                                 </div>
                             </div>
-                            <div className='bg-slate-50 py-6 text-center'>
+                            <div className='bg-slate-50 py-6 text-center text-[#F7941E] shadow-md rounded-md'>
                                 <div className='font-bold text-5xl'>
-                                    <CountUp start={0} end={12} delay={2}>
+                                    <CountUp start={230} end={250} delay={2}>
                                         {({ countUpRef }) => (
                                             <div>
                                                 <span ref={countUpRef} />+
@@ -75,7 +75,7 @@ const WhyChoose = () => {
                                     </CountUp>
                                 </div>
                                 <div className='text-xl font-semibold'>
-                                    Service Providers
+                                    Happy Customers
                                 </div>
                             </div>
                         </div>

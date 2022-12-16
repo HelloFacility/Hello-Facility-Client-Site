@@ -10,7 +10,7 @@ import Footer from '../../../Share/Footer/Footer';
 
 const BuildingManagementSolution = () => {
     return (
-        <div>
+        <div className='text-justify'>
             <div>
                 <ServiceNavbar />
                 <div className='h-96 mt-1' style={{
