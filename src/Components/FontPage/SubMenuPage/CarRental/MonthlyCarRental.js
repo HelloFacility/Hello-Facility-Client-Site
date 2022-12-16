@@ -53,17 +53,17 @@ const MonthlyCarRental = () => {
                 <div className='lg:w-3/4 md:w-full lg:shadow-lg lg:mr-10 lg:p-5 md:shadow-lg md:mr-16 md:p-5'>
                     <div>
                         <h1 className='text-2xl font-bold pb-4'>Overview</h1>
-                        <h4 className='font-bold text-lg text-sky-900'>What's included?</h4>
+                        <h4 className='font-bold text-lg text-[#0F75BC]'>What's included?</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quas illo consequatur ducimus autem, molestias quae eos ea facere perspiciatis officia odit neque quasi quam nesciunt quaerat pariatur sequi laudantium culpa architecto esse nemo, sunt explicabo. Ducimus vel repellendus sint, saepe nesciunt veniam omnis commodi repudiandae earum nam, illo laudantium!</p>
                     </div>
                     <br />
                     <div>
-                        <h4 className='font-bold text-lg text-sky-900'>What's excluded?</h4>
+                        <h4 className='font-bold text-lg text-[#0F75BC]'>What's excluded?</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quas illo consequatur ducimus autem, molestias quae eos ea facere perspiciatis officia odit neque quasi quam nesciunt quaerat pariatur sequi laudantium culpa architecto esse nemo, sunt explicabo. Ducimus vel repellendus sint, saepe nesciunt veniam omnis commodi repudiandae earum nam, illo laudantium!</p>
                     </div>
                 </div>
                 <div className=' lg:w-1/4 md:w-1/4  lg:shadow-lg lg:mr-16 lg:p-5 mt-3 md:whitespace-nowrap mx-auto'>
-                    <h1 className='text-xl font-bold text-sky-900 text-center'>Request For Quote</h1>
+                    <h1 className='text-xl font-bold text-[#0F75BC] text-center'>Request For Quote</h1>
                     <h1 className='text-base font-bold mb-4 text-yellow-500 text-center'>This Service Only for Office</h1>
                     <div className='lg:ml-0 md:ml-0 ml-20'>
                         <form>
@@ -129,23 +129,23 @@ const MonthlyCarRental = () => {
                 <div className='flex justify-center'>
                     <img className='w-[200px]' src={serviceLogo} alt="" />
                 </div>
-                <h1 className='text-center text-3xl font-bold text-sky-900'>Carpet Cleaning</h1>
+                <h1 className='text-center text-3xl font-bold text-[#0F75BC]'>Carpet Cleaning</h1>
                 <div className='lg:flex lg:mx-20 md:mx-16 mx-5 mt-10 gap-12'>
                     <div>
-                        <h2 className='font-semibold text-lg text-sky-900'>Experience with preparation of painting work</h2>
+                        <h2 className='font-semibold text-lg text-[#0F75BC]'>Experience with preparation of painting work</h2>
                         <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on. And this is something that a professional expert painter of sheba.xyz will have expert knowledge about and experience in painting works.</p> <br />
-                        <h2 className='font-semibold text-lg text-sky-900'>Experience with preparation of painting work</h2>
+                        <h2 className='font-semibold text-lg text-[#0F75BC]'>Experience with preparation of painting work</h2>
                         <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on. And this is something that a professional expert painter of sheba.xyz will have expert knowledge about and experience in painting works.</p>
                     </div>
                     <div>
-                        <h2 className='font-semibold text-lg text-sky-900'>Experience with preparation of painting work</h2>
+                        <h2 className='font-semibold text-lg text-[#0F75BC]'>Experience with preparation of painting work</h2>
                         <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on. And this is something that a professional expert painter of sheba.xyz will have expert knowledge about and experience in painting works.</p>
                     </div>
                 </div>
             </div>
             <div className='lg:mx-20 md:mx-16 mx-5 mt-10'>
                 <h1>
-                    <span className='font-bold text-xl text-sky-900'>Additional Service</span> <span className='text-lg'>Recommended related service</span>
+                    <span className='font-bold text-xl text-[#0F75BC]'>Additional Service</span> <span className='text-lg'>Recommended related service</span>
                 </h1>
                 <hr />
                 <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-10'>
@@ -153,40 +153,40 @@ const MonthlyCarRental = () => {
                         <div className='flex justify-center'>
                             <img className='w-[200px]' src={serviceLogo} alt="" />
                         </div>
-                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Carpet Cleaning</h2>
                         <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
                         <div className='mt-5'>
-                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                            <Link className='font-bold text-[#0F75BC]' to='/'>See More</Link>
                         </div>
                     </div>
                     <div className='shadow-md px-3 py-3 rounded-md'>
                         <div className='flex justify-center'>
                             <img className='w-[200px]' src={serviceLogo} alt="" />
                         </div>
-                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Carpet Cleaning</h2>
                         <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
                         <div className='mt-5'>
-                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                            <Link className='font-bold text-[#0F75BC]' to='/'>See More</Link>
                         </div>
                     </div>
                     <div className='shadow-md px-3 py-3 rounded-md'>
                         <div className='flex justify-center'>
                             <img className='w-[200px]' src={serviceLogo} alt="" />
                         </div>
-                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Carpet Cleaning</h2>
                         <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
                         <div className='mt-5'>
-                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                            <Link className='font-bold text-[#0F75BC]' to='/'>See More</Link>
                         </div>
                     </div>
                     <div className='shadow-md px-3 py-3 rounded-md'>
                         <div className='flex justify-center'>
                             <img className='w-[200px]' src={serviceLogo} alt="" />
                         </div>
-                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Carpet Cleaning</h2>
                         <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
                         <div className='mt-5'>
-                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                            <Link className='font-bold text-[#0F75BC]' to='/'>See More</Link>
                         </div>
                     </div>
                 </div>
@@ -194,7 +194,7 @@ const MonthlyCarRental = () => {
 
             {/* Review */}
             <div className='lg:mx-20 md:mx-16 mx-5 mt-10 pb-5'>
-                <h1 className='font-bold text-xl text-sky-900'>Service Review</h1>
+                <h1 className='font-bold text-xl text-[#0F75BC]'>Service Review</h1>
             </div>
             <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:mx-20 md:mx-16 mx-5 gap-5'>
                 <div className='shadow-md px-3 py-5 '>

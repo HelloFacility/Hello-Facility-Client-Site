@@ -11,7 +11,7 @@ const Client = () => {
     return (
         <div className="container 2xl:mx-auto 2xl:container lg:py-16 lg:px-40 xl:px-20 md:pt-12 md:px-6 py-9 px-4">
             <div className="flex flex-col items-start justify-center">
-                <h1 className="text-3xl font-bold xl:block leading-tight text-sky-900">
+                <h1 className="text-3xl font-bold xl:block leading-tight text-[#0F75BC]">
                     Our Valuable Client
                 </h1>
             </div>

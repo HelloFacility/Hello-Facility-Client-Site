@@ -184,7 +184,7 @@ const OrderForm = () => {
                 </div>
                 <br />
                 <div className='lg:flex justify-center'>
-                    <input className='border px-20 py-3 rounded-md cursor-pointer hover:bg-sky-900 hover:text-white font-bold text-sky-900' type="submit" value="Request Send" />
+                    <input className='border px-20 py-3 rounded-md cursor-pointer hover:bg-sky-900 hover:text-white font-bold text-[#0F75BC]' type="submit" value="Request Send" />
                 </div>
             </form>
         </div>

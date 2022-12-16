@@ -5,7 +5,7 @@ const Post = () => {
         <div>
             <div className="2xl:mx-auto 2xl:container lg:py-16 lg:px-40 xl:px-20 md:py-12 md:px-6 py-9 px-4">
                 <div className="">
-                    <h1 className="text-3xl font-bold xl:block hidden leading-tight text-sky-900">
+                    <h1 className="text-3xl font-bold xl:block hidden leading-tight text-[#0F75BC]">
                     Our Recent Post
                     </h1>
                     <p className="text-base leading-6 text-lef text-gray-600 sm:w-96 md:w-9/12 lg:w-5/12 mt-4">If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough</p>

@@ -1,5 +1,5 @@
 import React from 'react';
-import BlogPage from '../FontPage/BlogPage/BlogPage';
+// import BlogPage from '../FontPage/BlogPage/BlogPage';
 import Carousel from '../FontPage/Carousel/Carousel';
 import Client from '../FontPage/Client/Client';
 import Navbar from '../Share/Navbar/Navbar';
@@ -17,7 +17,7 @@ const Home = () => {
             <OurService/>
             <WhyChoose />
             <Client />
-            <BlogPage />
+            {/* <BlogPage /> */}
             <Footer />
         </div>
     );

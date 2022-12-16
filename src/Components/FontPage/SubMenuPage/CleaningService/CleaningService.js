@@ -25,7 +25,7 @@ const CleaningService = () => {
                         </div>
                     </div>
                 </div>
-                <div className='lg:ml-28 md:ml-16 ml-5'>
+                {/* <div className='lg:ml-28 md:ml-16 ml-5'>
                     <div className='pt-10'>
                         <p className='text-xl text-white'>Starts from <span className='text-2xl font-bold'>৳299</span></p>
                     </div>
@@ -37,7 +37,7 @@ const CleaningService = () => {
                         <div className='text-xl'><AiFillSafetyCertificate /></div>
                         <div>On Time Work Completion</div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             <div className='lg:flex lg:mx-20 md:mx-12 mx-5 mt-10 gap-6'>
@@ -55,9 +55,9 @@ const CleaningService = () => {
                 <div className='flex justify-center'>
                     <img className='w-[200px]' src={serviceLogo} alt="" />
                 </div>
-                <h1 className='text-center text-3xl font-bold text-sky-900'>Cleaning Services/Home Cleaning Service</h1>
+                <h1 className='text-center text-3xl font-bold text-[#0F75BC]'>Cleaning Services/Home Cleaning Service</h1>
                 <div className='lg:mx-20 md:mx-16 mx-5 mt-10'>
-                    <h2 className='font-semibold text-lg text-sky-900'>What We Do as Cleaning Services in Dhaka</h2>
+                    <h2 className='font-semibold text-lg text-[#0F75BC]'>What We Do as Cleaning Services in Dhaka</h2>
                     <p>We follow our guidelines strictly & assure you the best cleaning service in Dhaka, Bangladesh with experienced team members of over 10 years,</p>
                     <p>Our Cleaning Services in Dhaka include:</p>
                     <p>
@@ -70,7 +70,7 @@ const CleaningService = () => {
                 </div>
                 
                 <div className='lg:mx-20 md:mx-16 mx-5 mt-10'>
-                    <h3 className='font-semibold text-lg text-sky-900'>Home Cleaning Service in Dhaka - Our Steps for COVID-19</h3>
+                    <h3 className='font-semibold text-lg text-[#0F75BC]'>Home Cleaning Service in Dhaka - Our Steps for COVID-19</h3>
                     <p>For COVID-19, Bangladesh has suffered a significant loss. Hello Facility, A corporation that offers cleaning services has seen how Covid has affected everyone's lives. Because of this, our service begins with responsibility and following the government's guidelines by taking simple preventative safety steps.</p>
                     <li>We will wash our hands with soap and water or alcohol-based sanitizer before entering your premises.</li>
                     <li>Keeping a distance of 6 feet from individuals is advised.</li>
@@ -80,7 +80,7 @@ const CleaningService = () => {
                 </div>
 
                 <div className='lg:mx-20 md:mx-16 mx-5 mt-10'>
-                    <h3 className='font-semibold text-lg text-sky-900'>What More We Can Offer for Office/Home Cleaning Service?</h3>
+                    <h3 className='font-semibold text-lg text-[#0F75BC]'>What More We Can Offer for Office/Home Cleaning Service?</h3>
                     <p>You can certainly ask us for the precise service you want. In order to acquire the ideal timetable for you, we also provide you with a customized cleaning service plan in Dhaka. Here are some of the services that we offer more:</p>
                     <p>1. A customized, no-contract house cleaning plan.</p>
                     <p>2. There are no additional fees or hidden costs; we simply charge for the service.</p>
@@ -100,7 +100,7 @@ const CleaningService = () => {
                 </div>
 
                 <div className='lg:mx-20 md:mx-16 mx-5 mt-10'>
-                    <h2 className='font-semibold text-lg text-sky-900'>Hello Facility Cleaning Service Pricing</h2>
+                    <h2 className='font-semibold text-lg text-[#0F75BC]'>Hello Facility Cleaning Service Pricing</h2>
                     <p>Hello Facility values interpersonal bonds above just corporate interactions. We mostly discuss our customers' options and opportunities for cleaning services in Dhaka or elsewhere in Bangladesh. But, if this is truly that essential to you, here is a look at our pricing:</p>
                     <p>1. 4 - 5 tk per square foot for public areas.</p>
                     <p>2. We offer a standard bundle of 3500 BDT for 800 square feet (Max)</p>
@@ -109,7 +109,7 @@ const CleaningService = () => {
                 </div>
 
                 <div className='lg:mx-20 md:mx-16 mx-5 mt-10'>
-                    <h3 className='font-semibold text-lg text-sky-900'>Cleaning Services in Dhaka - Things to Keep in Mind</h3>
+                    <h3 className='font-semibold text-lg text-[#0F75BC]'>Cleaning Services in Dhaka - Things to Keep in Mind</h3>
                     <p>1. Before staff depart the premises, service must be verified. We will not accept any further complaints after that.</p>
                     <p>2. Any additional services provided by staff will be charged in addition to the sum discussed.</p>
                     <p>3. Before the service begins, you must remove any valuable items.</p>
@@ -119,7 +119,7 @@ const CleaningService = () => {
             </div>
             <div className='lg:mx-20 md:mx-16 mx-5 mt-10'>
                 <h1>
-                    <span className='font-bold text-xl text-sky-900'>Additional Service</span> <span className='text-lg'>Recommended related service</span>
+                    <span className='font-bold text-xl text-[#0F75BC]'>Additional Service</span> <span className='text-lg'>Recommended related service</span>
                 </h1>
                 <hr />
                 <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-10'>
@@ -127,40 +127,40 @@ const CleaningService = () => {
                         <div className='flex justify-center'>
                             <img className='w-[200px]' src={serviceLogo} alt="" />
                         </div>
-                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Carpet Cleaning</h2>
                         <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
                         <div className='mt-5'>
-                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                            <Link className='font-bold text-[#0F75BC]' to='/'>See More</Link>
                         </div>
                     </div>
                     <div className='shadow-md px-3 py-3 rounded-md'>
                         <div className='flex justify-center'>
                             <img className='w-[200px]' src={serviceLogo} alt="" />
                         </div>
-                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Carpet Cleaning</h2>
                         <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
                         <div className='mt-5'>
-                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                            <Link className='font-bold text-[#0F75BC]' to='/'>See More</Link>
                         </div>
                     </div>
                     <div className='shadow-md px-3 py-3 rounded-md'>
                         <div className='flex justify-center'>
                             <img className='w-[200px]' src={serviceLogo} alt="" />
                         </div>
-                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Carpet Cleaning</h2>
                         <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
                         <div className='mt-5'>
-                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                            <Link className='font-bold text-[#0F75BC]' to='/'>See More</Link>
                         </div>
                     </div>
                     <div className='shadow-md px-3 py-3 rounded-md'>
                         <div className='flex justify-center'>
                             <img className='w-[200px]' src={serviceLogo} alt="" />
                         </div>
-                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Carpet Cleaning</h2>
                         <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
                         <div className='mt-5'>
-                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                            <Link className='font-bold text-[#0F75BC]' to='/'>See More</Link>
                         </div>
                     </div>
                 </div>
@@ -168,7 +168,7 @@ const CleaningService = () => {
 
             {/* Review */}
             <div className='lg:mx-20 md:mx-16 mx-5 mt-10 pb-5'>
-                <h1 className='font-bold text-xl text-sky-900'>Service Review</h1>
+                <h1 className='font-bold text-xl text-[#0F75BC]'>Service Review</h1>
             </div>
             <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:mx-20 md:mx-16 mx-5 gap-5'>
                 <div className='shadow-md px-3 py-5 '>
@@ -206,7 +206,7 @@ const CleaningService = () => {
             </div>
 
             <div className='lg:mx-20 md:mx-16 mx-5 my-10'>
-                <h2 className='font-semibold text-lg text-sky-900 '>Why Choose Hello Facility for Cleaning Service?</h2>
+                <h2 className='font-semibold text-lg text-[#0F75BC] '>Why Choose Hello Facility for Cleaning Service?</h2>
                 <p>Keeping a large house clean is a lot of effort, and your housemaid's cleaning will not be enough. You require expert cleaning services to provide a dust-free, clean environment. Hello Facility has worked on this for almost 5 years. We have already served a number of reputable clients. So, we know how much cleaning will delight you and will be completed by our skilled hands without a doubt. Furthermore, we provide the most competitive rates and make every effort to accommodate your schedule. We sincerely believe in mutual bonds and strive to keep them in such a way that you are satisfied with our services. So, simply call us or fill out the form to receive what you need from us.</p>
             </div>
             <Footer />

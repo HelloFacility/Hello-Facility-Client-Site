@@ -54,7 +54,7 @@ const KitchenCleaning = () => {
                 <div className='flex justify-center'>
                     <img className='w-[200px]' src={serviceLogo} alt="" />
                 </div>
-                <h1 className='text-center text-3xl font-bold text-sky-900'>Kitchen Cleaning</h1>
+                <h1 className='text-center text-3xl font-bold text-[#0F75BC]'>Kitchen Cleaning</h1>
                 <div className='lg:mx-20 md:mx-16 mx-5 mt-10 gap-12'>
                     <div>
                         <p>We occasionally look for simple, quick kitchen cleaning tips. However, you may avoid this hassle if you have your kitchen professionally cleaned once a month. We're not arguing that easy-to-follow advice won't be effective. However, it will be a waste of your time, effort, and money. So hire a specialist and take pleasure in your spotless kitchen. Before moving into a new home, following a remodeling, and both before and after a party or get-together, you should clean the kitchen. Our services - </p> <br />
@@ -67,7 +67,7 @@ const KitchenCleaning = () => {
                         <li>Removal and re-arrangement of utensils and cleaning of storage cabinets</li>
                         <li>Washing, wiping and sanitizing floor and tiles</li>
 
-                        <h2 className='font-semibold text-lg text-sky-900 pt-6'>Precautions Against COVID-19</h2>
+                        <h2 className='font-semibold text-lg text-[#0F75BC] pt-6'>Precautions Against COVID-19</h2>
                         <p className='pt-2'>The state of COVID-19 has greatly improved. Since we all had to suffer, we don't want to take any chances. We will continue to follow the necessary coronavirus precautions because we will be visiting your home. We would appreciate it if you followed suit. Your safety will always come first to us, no matter what.</p>
                         <li>Our entire crew has undergone the necessary vaccines.</li>
                         <li>We always put on masks and follow basic hygiene. We wash our hands with soap or alcohol-based hand sanitizer, for instance.</li>
@@ -76,14 +76,14 @@ const KitchenCleaning = () => {
                         <li>Before and after work, we spray disinfectant on every piece of equipment.</li>
                         <li>Maintaining social distance is something we value highly.</li>
 
-                        <h2 className='font-semibold text-lg text-sky-900 pt-6'>Pricing</h2>
+                        <h2 className='font-semibold text-lg text-[#0F75BC] pt-6'>Pricing</h2>
                         <ul>
                             <li>Sqft</li>
                             <li>Payment method</li>
                             <li>Extra payment</li>
                             <li>Service charge</li>
                         </ul>
-                        <h2 className='font-semibold text-lg text-sky-900 pt-6'>Why Should You Hire a Kitchen Cleaning Service?</h2>
+                        <h2 className='font-semibold text-lg text-[#0F75BC] pt-6'>Why Should You Hire a Kitchen Cleaning Service?</h2>
                         <p>Searching for some kitchen cleaning tips and tricks online? Why not hire a professional to take care of the mess? Here's why this will be one of your best decisions - </p>
 
 
@@ -102,7 +102,7 @@ const KitchenCleaning = () => {
 
                         <p className='pt-6'>We really hope that you found this material useful. For those in Dhaka, Hello Facility provides specialized kitchen cleaning services. <Link to='/contactUs'>Contact us</Link>and get a top notch kitchen. </p>
 
-                        <h2 className='font-semibold text-lg text-sky-900 pt-6'>Things to Keep in Mind</h2>
+                        <h2 className='font-semibold text-lg text-[#0F75BC] pt-6'>Things to Keep in Mind</h2>
                         <p>As one of the best kitchen cleaning service providers in Dhaka, our priority will always be providing the most satisfactory services. But you have to keep some things in mind to make it happen. Such as -</p>
 
                         <li>Any delays caused by the customer will result in an additional fee being added to the service price.</li>
@@ -117,7 +117,7 @@ const KitchenCleaning = () => {
             </div>
             <div className='lg:mx-20 md:mx-16 mx-5 mt-10'>
                 <h1>
-                    <span className='font-bold text-xl text-sky-900'>Additional Service</span> <span className='text-lg'>Recommended related service</span>
+                    <span className='font-bold text-xl text-[#0F75BC]'>Additional Service</span> <span className='text-lg'>Recommended related service</span>
                 </h1>
                 <hr />
                 <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-10'>
@@ -125,40 +125,40 @@ const KitchenCleaning = () => {
                         <div className='flex justify-center'>
                             <img className='w-[200px]' src={serviceLogo} alt="" />
                         </div>
-                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Carpet Cleaning</h2>
                         <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
                         <div className='mt-5'>
-                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                            <Link className='font-bold text-[#0F75BC]' to='/'>See More</Link>
                         </div>
                     </div>
                     <div className='shadow-md px-3 py-3 rounded-md'>
                         <div className='flex justify-center'>
                             <img className='w-[200px]' src={serviceLogo} alt="" />
                         </div>
-                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Carpet Cleaning</h2>
                         <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
                         <div className='mt-5'>
-                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                            <Link className='font-bold text-[#0F75BC]' to='/'>See More</Link>
                         </div>
                     </div>
                     <div className='shadow-md px-3 py-3 rounded-md'>
                         <div className='flex justify-center'>
                             <img className='w-[200px]' src={serviceLogo} alt="" />
                         </div>
-                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Carpet Cleaning</h2>
                         <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
                         <div className='mt-5'>
-                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                            <Link className='font-bold text-[#0F75BC]' to='/'>See More</Link>
                         </div>
                     </div>
                     <div className='shadow-md px-3 py-3 rounded-md'>
                         <div className='flex justify-center'>
                             <img className='w-[200px]' src={serviceLogo} alt="" />
                         </div>
-                        <h2 className='text-center text-lg font-bold text-sky-900'>Carpet Cleaning</h2>
+                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Carpet Cleaning</h2>
                         <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
                         <div className='mt-5'>
-                            <Link className='font-bold text-sky-900' to='/'>See More</Link>
+                            <Link className='font-bold text-[#0F75BC]' to='/'>See More</Link>
                         </div>
                     </div>
                 </div>
@@ -166,7 +166,7 @@ const KitchenCleaning = () => {
 
             {/* Review */}
             <div className='lg:mx-20 md:mx-16 mx-5 mt-10 pb-5'>
-                <h1 className='font-bold text-xl text-sky-900'>Service Review</h1>
+                <h1 className='font-bold text-xl text-[#0F75BC]'>Service Review</h1>
             </div>
             <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:mx-20 md:mx-16 mx-5 gap-5'>
                 <div className='shadow-md px-3 py-5 '>
@@ -204,7 +204,7 @@ const KitchenCleaning = () => {
             </div>
 
             <div className='lg:mx-20 md:mx-16 mx-5 mt-10'>
-            <h2 className='font-semibold text-lg text-sky-900 pt-6'>Why Choose The Hello Facility for Kitchen Cleaning Services?</h2>
+            <h2 className='font-semibold text-lg text-[#0F75BC] pt-6'>Why Choose The Hello Facility for Kitchen Cleaning Services?</h2>
             <p className='pt-4'>Hello Facility is dedicated to giving consumers top-notch services. Your kitchen will be thoroughly cleaned by our pros using cutting-edge cleaning equipment. They complete the task with biodegradable and non-hazardous materials to protect your family's health and your expensive kitchen and equipment. You may anticipate your kitchen to smell wonderful and look fantastic after using our kitchen cleaning services.</p>
             <p className='pt-4'>At a fair price, we provide thorough cleaning services in our kitchen. Having frequent services rather than worrying about overspending benefits our customers. After using Hello Facility Kitchen Cleaning Services, you'll realize what you've been missing all these years!</p>
             <p className='pt-4'>It's crucial to feel confident in a service provider before allowing them access to your home for any service. For this reason, we ensure that our registered service providers have a solid track record. To ensure trust, we check their credentials, expertise, and other factors, as well as the histories of their clients.</p>

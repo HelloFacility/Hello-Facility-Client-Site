@@ -9,11 +9,11 @@ const WhyChoose = () => {
                     <div className="w-1/3 bg-white h-full" />
                 </div>
                 <div className="xl:px-20 px-8 pt-0 2xl:mx-auto 2xl:container relative z-40">
-                    <h1 className="text-3xl font-bold xl:block leading-tight text-sky-900">
+                    <h1 className="text-3xl font-bold xl:block leading-tight text-[#0F75BC]">
                         Why Choose Us
                     </h1>
                     <div className="flex">
-                        <div className="mt-14 md:flex">
+                        <div className="mt-5 md:flex">
                             <div className="relative lg:w-1/2 sm:w-96 xl:h-96 h-80">
                                 <img src="https://i.ibb.co/4g1D9cv/imgslider1.png" alt="imageOfProfile" className="w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded" />
                             </div>
@@ -66,7 +66,7 @@ const WhyChoose = () => {
                             </div>
                             <div className='bg-slate-50 py-6 text-center text-[#F7941E] shadow-md rounded-md'>
                                 <div className='font-bold text-5xl'>
-                                    <CountUp start={230} end={250} delay={2}>
+                                    <CountUp start={330} end={350} delay={2}>
                                         {({ countUpRef }) => (
                                             <div>
                                                 <span ref={countUpRef} />+

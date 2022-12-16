@@ -9,10 +9,10 @@ const OurService = () => {
     return (
         <div>
             <div className='items-center justify-between lg:mx-20 md:mx-16 mx-5 mt-10'>
-                <h1 className='text-3xl font-bold xl:block leading-tight text-sky-900'>Recommended For You</h1>
+                <h1 className='text-3xl font-bold xl:block leading-tight text-[#0F75BC]'>Recommended For You</h1>
             </div>
             <div>
-                <div className='lg:flex md:flex gap-5 lg:mx-20 md:mx-16 mx-5 my-10'>
+                <div className='lg:grid md:grid lg:grid-cols-4 md:grid-cols-2 gap-5 lg:mx-20 md:mx-16 mx-5 my-5'>
                     <div>
                         <div>
                             <Link to='/pest-control'>
@@ -25,7 +25,7 @@ const OurService = () => {
                                             alt="green iguana"
                                         />
                                         <CardContent>
-                                            <h2 className='font-bold text-xl text-center pb-7'>Pest Control</h2>
+                                            <h2 className='font-bold lg:text-xl text-lg text-center lg:pb-7'>Pest Control</h2>
                                         </CardContent>
                                     </CardActionArea>
                                 </Card>
@@ -44,7 +44,7 @@ const OurService = () => {
                                             alt="green iguana"
                                         />
                                         <CardContent>
-                                            <h2 className='font-bold text-xl text-center'>Commercial Cleaning Service</h2>
+                                            <h2 className='font-bold lg:text-xl text-lg text-center'>Commercial Cleaning Service</h2>
                                         </CardContent>
                                     </CardActionArea>
                                 </Card>
@@ -63,7 +63,7 @@ const OurService = () => {
                                             alt="green iguana"
                                         />
                                         <CardContent>
-                                            <h2 className='font-bold text-xl text-center pb-7'>Kitchen Cleaning</h2>
+                                            <h2 className='font-bold lg:text-xl text-lg text-center lg:pb-7'>Kitchen Cleaning</h2>
                                         </CardContent>
                                     </CardActionArea>
                                 </Card>
@@ -82,7 +82,7 @@ const OurService = () => {
                                             alt="green iguana"
                                         />
                                         <CardContent>
-                                            <h2 className='font-bold text-xl text-center'>Building Management System</h2>
+                                            <h2 className='font-bold lg:text-xl text-lg text-center'>Building Management System</h2>
                                         </CardContent>
                                     </CardActionArea>
                                 </Card>
