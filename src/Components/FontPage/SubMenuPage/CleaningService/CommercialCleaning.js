@@ -17,24 +17,11 @@ const CommercialCleaning = () => {
                 <div className='lg:flex md:justify-between items-center'>
                     <div className='flex gap-4 items-baseline'>
                         <div>
-                            <h1 className='lg:text-4xl md:text-3xl text-2xl font-bold mt-16 lg:ml-28 md:ml-16 ml-5 text-white'>Commercial Cleaning Service/Regular Office</h1>
+                            <h1 className='lg:text-4xl md:text-3xl text-2xl font-bold mt-16 lg:mx-28 md:mx-16 mx-5 text-white'>Commercial Cleaning Service/Regular Office</h1>
                         </div>
-                        <div>
+                        {/* <div>
                             <img className='lg:w-36 md:w-36 w-48  pr-5' src={badge} alt="" />
-                        </div>
-                    </div>
-                </div>
-                <div className='lg:ml-28 md:ml-16 ml-5'>
-                    <div className='pt-10'>
-                        <p className='text-xl text-white'>Starts from <span className='text-2xl font-bold'>৳299</span></p>
-                    </div>
-                    <div className='flex font-semibold text-white items-center gap-2 pt-8 '>
-                        <div className='text-xl'><AiFillSafetyCertificate /></div>
-                        <div>On Time Work Completion</div>
-                    </div>
-                    <div className='flex font-semibold text-white items-center gap-2 pt-4'>
-                        <div className='text-xl'><AiFillSafetyCertificate /></div>
-                        <div>On Time Work Completion</div>
+                        </div> */}
                     </div>
                 </div>
             </div>
@@ -42,7 +29,7 @@ const CommercialCleaning = () => {
             <div className='lg:flex lg:mx-20 md:mx-12 mx-5 mt-10 gap-6'>
                 <div className='w-full shadow-md px-4 py-4 rounded-md'>
                     <div>
-                        <h1 className='text-2xl font-bold pb-4'>Overview</h1>
+                        <h1 className='text-2xl text-[#0F75BC] font-bold pb-4'>Overview</h1>
                         <h4 className='font-bold text-lg text-[#0F75BC]'>Commercial Cleaning Services Tailored to Fit Your Needs</h4>
                         <p className='pt-2'>HelloFacility provides commercial cleaning services to government buildings, multiple-location institutions, and neighborhood businesses. Our skilled employees are aware of the criteria of highly commercial clientele because we have previously served some of the biggest businesses in Bangladesh. HelloFacility ensures high standards of customer service, material safety, and environmentally friendly cleaning.</p>
                     </div>
@@ -58,7 +45,7 @@ const CommercialCleaning = () => {
                 <div className='flex justify-center'>
                     <img className='w-[200px]' src={serviceLogo} alt="" />
                 </div>
-                <h1 className='text-center text-3xl font-bold text-[#0F75BC]'>Commercial Cleaning Service/Regular Office</h1>
+                <h1 className='text-center lg:text-3xl md:text-2xl text-xl font-bold text-[#0F75BC]'>Commercial Cleaning Service/Regular Office</h1>
                 <div className='lg:mx-20 md:mx-16 mx-5 mt-10 gap-12'>
                     <div>
                         <h2 className='font-semibold text-lg text-[#0F75BC]'>Best Business & Office Cleaning Services to Fit Your Needs </h2>
@@ -146,40 +133,40 @@ const CommercialCleaning = () => {
                         <div className='flex justify-center'>
                             <img className='w-[200px]' src={serviceLogo} alt="" />
                         </div>
-                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Carpet Cleaning</h2>
-                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
+                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Pest Control</h2>
+                        <p>Are you looking for a pest control expert who can offer qualified pest solutions? Hello facility is one of the top pest control services in Dhaka.</p>
                         <div className='mt-5'>
-                            <Link className='font-bold text-[#0F75BC]' to='/'>See More</Link>
+                            <Link className='font-bold text-[#0F75BC]' to='/pest-control'>See More</Link>
                         </div>
                     </div>
                     <div className='shadow-md px-3 py-3 rounded-md'>
                         <div className='flex justify-center'>
                             <img className='w-[200px]' src={serviceLogo} alt="" />
                         </div>
-                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Carpet Cleaning</h2>
-                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
+                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Car Rental</h2>
+                        <p>Interested in car rental services? You have arrived at the correct location! For a dependable car rental service, the Hello Facility is becoming more and more well-known in Bangladesh</p>
                         <div className='mt-5'>
-                            <Link className='font-bold text-[#0F75BC]' to='/'>See More</Link>
+                            <Link className='font-bold text-[#0F75BC]' to='/car-rental'>See More</Link>
                         </div>
                     </div>
                     <div className='shadow-md px-3 py-3 rounded-md'>
                         <div className='flex justify-center'>
                             <img className='w-[200px]' src={serviceLogo} alt="" />
                         </div>
-                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Carpet Cleaning</h2>
-                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
+                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Kitchen Cleaning</h2>
+                        <p>Are you trying to find a trustworthy cleaning service in Dhaka, Bangladesh? You're in the right spot. Your kitchen will look brand new thanks to Hello Facility.</p>
                         <div className='mt-5'>
-                            <Link className='font-bold text-[#0F75BC]' to='/'>See More</Link>
+                            <Link className='font-bold text-[#0F75BC]' to='/kitchen-cleaning'>See More</Link>
                         </div>
                     </div>
                     <div className='shadow-md px-3 py-3 rounded-md'>
                         <div className='flex justify-center'>
                             <img className='w-[200px]' src={serviceLogo} alt="" />
                         </div>
-                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Carpet Cleaning</h2>
-                        <p>Painting is more than just splashing paint on your walls. There’s a lot of prior work that goes into painting, like sanding, filling putty, priming and so on.</p>
+                        <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Building Management System</h2>
+                        <p>Building management companies can literally ease your life. The building management system (BMS) is a centralized control system that automates the regulation. It controls the non-GMP facility subsystems.</p>
                         <div className='mt-5'>
-                            <Link className='font-bold text-[#0F75BC]' to='/'>See More</Link>
+                            <Link className='font-bold text-[#0F75BC]' to='/buildingManagement'>See More</Link>
                         </div>
                     </div>
                 </div>

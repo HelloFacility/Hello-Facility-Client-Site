@@ -14,6 +14,9 @@ import Home from './Components/Home/Home';
 import CleaningService from './Components/FontPage/SubMenuPage/CleaningService/CleaningService';
 import PestControl from './Components/FontPage/SubMenuPage/PestControl/PestControl';
 import CarRental from './Components/FontPage/SubMenuPage/CarRental/CarRental';
+import About from './Components/AdditionalPage/About';
+import NotFound from './Components/AdditionalPage/NotFound';
+import Career from './Components/AdditionalPage/Career';
 
 function App() {
   return (
@@ -33,6 +36,9 @@ function App() {
         <Route path='/cleaning-service' element={<CleaningService/>}></Route>
         <Route path='/pest-control' element={<PestControl/>}></Route>
         <Route path='/car-rental' element={<CarRental/>}></Route>
+        <Route path='/about' element={<About/>}></Route>
+        <Route path='/career' element={<Career/>}></Route>
+        <Route path='*' element={<NotFound/>}></Route>
       </Routes>
     </div>
   );

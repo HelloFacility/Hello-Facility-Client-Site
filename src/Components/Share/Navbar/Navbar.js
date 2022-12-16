@@ -44,9 +44,9 @@ const Navbar = () => {
                                 </div>
                             </div>
                             <div className='flex gap-5'>
-                                <Link to='/'>About Us</Link>
+                                <Link to='/about'>About Us</Link>
                                 <Link to='/'>Our Team</Link>
-                                <Link to='/'>Career</Link>
+                                <Link to='/career'>Career</Link>
                             </div>
                         </div>
                     </div>
@@ -84,9 +84,9 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className='flex gap-5'>
-                            <Link to='/'>About Us</Link>
+                            <Link to='/about'>About Us</Link>
                             <Link to='/'>Our Team</Link>
-                            <Link to='/'>Career</Link>
+                            <Link to='/career'>Career</Link>
                         </div>
                     </div>
                 </div>

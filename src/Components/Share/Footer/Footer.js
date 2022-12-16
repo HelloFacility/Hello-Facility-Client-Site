@@ -17,7 +17,7 @@ const Footer = () => {
                             <div className="lg:visible hidden sm:w-40 md:w-50 xl:w-50 lg:flex  justify-start items-start flex-col space-y-6">
                                 <h2 className="text-base xl:text-xl font-bold xl:font-semibold leading-4 xl:leading-5 text-white">Community</h2>
                                 <button className="text-left text-base hover:text-gray-400 leading-none text-gray-100">
-                                    About Us
+                                    <Link to='/about'>About Us</Link>
                                 </button>
                                 <button className="text-left text-base hover:text-gray-400 leading-none text-gray-100">
                                     Our Team
