@@ -15,8 +15,8 @@ const ContactUs = () => {
                         <div className='flex justify-start'>
                             <p className='text-8xl text-[#0F98DA]'><FaAddressCard /></p>
                         </div>
-                        <p className='text-lg font-bold'>Registered Address:</p>
-                        <p>Sunrise Garden, House # 5/B, Primary School Road , Kallyanpur, Mirpur - 1207, Dhaka Division, Bangladesh</p>
+                        <p className='text-lg font-bold'>Mailing Address</p>
+                        <p>Road -1, House- 6, Shekhertek, Adabor, Dhaka-1207</p>
                     </div>
                     <div className='lg:w-1/3 lg:pl-20'>
                         <div className='flex justify-start'>

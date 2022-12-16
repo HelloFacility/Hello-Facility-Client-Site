@@ -17,6 +17,7 @@ import CarRental from './Components/FontPage/SubMenuPage/CarRental/CarRental';
 import About from './Components/AdditionalPage/About';
 import NotFound from './Components/AdditionalPage/NotFound';
 import Career from './Components/AdditionalPage/Career';
+import OurTeam from './Components/AdditionalPage/OurTeam';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path='/car-rental' element={<CarRental/>}></Route>
         <Route path='/about' element={<About/>}></Route>
         <Route path='/career' element={<Career/>}></Route>
+        <Route path='/our-team' element={<OurTeam/>}></Route>
         <Route path='*' element={<NotFound/>}></Route>
       </Routes>
     </div>

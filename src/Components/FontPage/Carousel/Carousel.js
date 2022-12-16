@@ -19,7 +19,7 @@ const Carousel = () => {
                         <br />customer satisfaction, quality and integrity.</p>
                 </div>
                 <div className='flex justify-center pt-10'>
-                    <Link className='font-bold shadow-sm bg-[#0F75BC] text-white lg:px-4 px-6 py-3 rounded-md' to='/contactUs'>Learn More</Link>
+                    <Link className='font-bold shadow-sm bg-[#0F75BC] text-white lg:px-4 px-6 py-3 rounded-md' to='/contactUs'>Contact Us</Link>
                 </div>
             </div>
         </div>

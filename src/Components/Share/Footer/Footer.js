@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="flex px-4 md:px-6  xl:px-20 flex-col justify-start items-start md:justify-center md:items-center relative z-10 bg-sky-900 pt-10">
                     <div className="flex  flex-col items-start justify-start xl:justify-center xl:space-x-8 xl:flex-row">
                         <div className="flex flex-col justify-start items-center space-x-4">
-                            <img className='w-56' src={Logo} alt="" />
+                            <Link to='/'><img className='w-56' src={Logo} alt="" /></Link>
                             <p className="w-60 text-sm pt-2 pl-2 font-semibold leading-normal text-white"><span>Integrity</span> . <span>Commitment</span> . <span>Quality</span></p>
                         </div>
                         <div className="mt-12 xl:mt-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 sm:gap-y-0 w-full md:w-auto sm:gap-x-20 md:gap-x-28 xl:gap-8">
