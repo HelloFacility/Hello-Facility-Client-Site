@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import CarRenralBanner from '../../Images/CarRentalBanner.jpg'
+import CarRenralBanner from '../../Images/SubMenuPageImg/HomePageCarRental.webp'
 import HappyCustomer from '../../Images/HappyCustomerLogo.png'
+import CleaningServiceImg from '../../Images/SubMenuPageImg/HomepageCleaning.jpg'
 
 const RentalCleaningService = () => {
     return (
@@ -33,7 +34,7 @@ const RentalCleaningService = () => {
                     </Link>
                 </div>
                 <div className='lg:w-2/5 md:full pt-5'>
-                    <img src={CarRenralBanner} alt="" />
+                    <img src={CleaningServiceImg} alt="" />
                 </div>
             </div>
         </div>

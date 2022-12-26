@@ -1,12 +1,16 @@
 import React from 'react';
 import ServiceNavbar from '../../../Share/ServiceNavbar/ServiceNavbar';
-import TopBanner from '../../../../Images/SubmenuService/SubMenuTopImg.jpg'
+import TopBanner from '../../../../Images/SubMenuPageImg/CommercialCleaningServiceCover.jpg'
 import badge from '../../../../Images/SubmenuService/badge.png'
 import { AiFillSafetyCertificate } from 'react-icons/ai';
 import Footer from '../../../Share/Footer/Footer';
 import serviceLogo from '../../../../Images/ServiceLogo/CleaningService.png'
 import { Link } from 'react-router-dom';
 import { Rating, Stack } from '@mui/material';
+import CleaningServiceIcon from '../../../../Images/ServiceLogo/CleaningService.jpeg'
+import PestControlIcon from '../../../../Images/ServiceLogo/Pestcontrol.jpg'
+import CarRentalIcon from '../../../../Images/ServiceLogo/kpeg.jpg'
+import BMSIcon from '../../../../Images/ServiceLogo/bms.jpg'
 const CommercialCleaning = () => {
     return (
         <div className='text-justify'>
@@ -131,7 +135,7 @@ const CommercialCleaning = () => {
                 <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-10'>
                     <div className='shadow-md px-3 py-3 rounded-md'>
                         <div className='flex justify-center'>
-                            <img className='w-[200px]' src={serviceLogo} alt="" />
+                            <img className='w-[200px] h-[120px]' src={PestControlIcon} alt="" />
                         </div>
                         <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Pest Control</h2>
                         <p>Are you looking for a pest control expert who can offer qualified pest solutions? Hello facility is one of the top pest control services in Dhaka.</p>
@@ -141,7 +145,7 @@ const CommercialCleaning = () => {
                     </div>
                     <div className='shadow-md px-3 py-3 rounded-md'>
                         <div className='flex justify-center'>
-                            <img className='w-[200px]' src={serviceLogo} alt="" />
+                            <img className='w-[200px] h-[120px]' src={CarRentalIcon} alt="" />
                         </div>
                         <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Car Rental</h2>
                         <p>Interested in car rental services? You have arrived at the correct location! For a dependable car rental service, the Hello Facility is becoming more and more well-known in Bangladesh</p>
@@ -151,7 +155,7 @@ const CommercialCleaning = () => {
                     </div>
                     <div className='shadow-md px-3 py-3 rounded-md'>
                         <div className='flex justify-center'>
-                            <img className='w-[200px]' src={serviceLogo} alt="" />
+                            <img className='w-[200px] h-[120px]' src={CleaningServiceIcon} alt="" />
                         </div>
                         <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Kitchen Cleaning</h2>
                         <p>Are you trying to find a trustworthy cleaning service in Dhaka, Bangladesh? You're in the right spot. Your kitchen will look brand new thanks to Hello Facility.</p>
@@ -161,7 +165,7 @@ const CommercialCleaning = () => {
                     </div>
                     <div className='shadow-md px-3 py-3 rounded-md'>
                         <div className='flex justify-center'>
-                            <img className='w-[200px]' src={serviceLogo} alt="" />
+                            <img className='w-[200px] h-[120px]' src={BMSIcon} alt="" />
                         </div>
                         <h2 className='text-center text-lg font-bold text-[#0F75BC]'>Building Management System</h2>
                         <p>Building management companies can literally ease your life. The building management system (BMS) is a centralized control system that automates the regulation. It controls the non-GMP facility subsystems.</p>
@@ -173,7 +177,7 @@ const CommercialCleaning = () => {
             </div>
 
             {/* Review */}
-            <div className='lg:mx-20 md:mx-16 mx-5 mt-10 pb-5'>
+            {/* <div className='lg:mx-20 md:mx-16 mx-5 mt-10 pb-5'>
                 <h1 className='font-bold text-xl text-[#0F75BC]'>Service Review</h1>
             </div>
             <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:mx-20 md:mx-16 mx-5 gap-5 pb-10'>
@@ -209,7 +213,7 @@ const CommercialCleaning = () => {
                         <small>Date: 19 September, 2022</small>
                     </Stack>
                 </div>
-            </div>
+            </div> */}
             <Footer />
         </div>
     );

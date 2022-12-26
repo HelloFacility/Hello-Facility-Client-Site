@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import car from '../../../Images/SubmenuService/SubMenuTopImg.jpg'
+import PestControl from '../../../Images/SubMenuPageImg/PestControlCover.jpg'
+import CommercialCleaningService from '../../../Images/SubMenuPageImg/CommercialCleaningServiceCover.jpg'
+import KitchenCleaning from '../../../Images/SubMenuPageImg/KitchenCleaningCover.jpg'
+import BuildingManagement from '../../../Images/SubMenuPageImg/BuildingManagementSystemCover.jpg'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -21,7 +24,7 @@ const OurService = () => {
                                         <CardMedia
                                             component="img"
                                             height="130"
-                                            image={car}
+                                            image={PestControl}
                                             alt="green iguana"
                                         />
                                         <CardContent>
@@ -40,7 +43,7 @@ const OurService = () => {
                                         <CardMedia
                                             component="img"
                                             height="130"
-                                            image={car}
+                                            image={CommercialCleaningService}
                                             alt="green iguana"
                                         />
                                         <CardContent>
@@ -59,7 +62,7 @@ const OurService = () => {
                                         <CardMedia
                                             component="img"
                                             height="130"
-                                            image={car}
+                                            image={KitchenCleaning}
                                             alt="green iguana"
                                         />
                                         <CardContent>
@@ -78,7 +81,7 @@ const OurService = () => {
                                         <CardMedia
                                             component="img"
                                             height="130"
-                                            image={car}
+                                            image={BuildingManagement}
                                             alt="green iguana"
                                         />
                                         <CardContent>

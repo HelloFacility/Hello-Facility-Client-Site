@@ -1,5 +1,6 @@
 import React from 'react';
 import CountUp from 'react-countup';
+import WhyChooseUs from '../../../Images/SubMenuPageImg/WhyChooseUs.jpg'
 
 const WhyChoose = () => {
     return (
@@ -15,7 +16,7 @@ const WhyChoose = () => {
                     <div className="flex">
                         <div className="mt-5 md:flex">
                             <div className="relative lg:w-1/2 sm:w-96 xl:h-96 h-80">
-                                <img src="https://i.ibb.co/4g1D9cv/imgslider1.png" alt="imageOfProfile" className="w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded" />
+                                <img src={WhyChooseUs} alt="imageOfProfile" className="w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded" />
                             </div>
                             <div className="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 mt-4 flex flex-col justify-between ">
                                 <div>
