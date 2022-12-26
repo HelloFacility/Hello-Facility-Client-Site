@@ -1,5 +1,4 @@
 import React from 'react';
-import ServiceNavbar from '../../../Share/ServiceNavbar/ServiceNavbar';
 import TopBanner from '../../../../Images/SubMenuPageImg/KitchenCleaningCover.jpg'
 import badge from '../../../../Images/SubmenuService/badge.png'
 import { AiFillSafetyCertificate } from 'react-icons/ai';
@@ -11,11 +10,12 @@ import CleaningServiceIcon from '../../../../Images/ServiceLogo/CleaningService.
 import PestControlIcon from '../../../../Images/ServiceLogo/Pestcontrol.jpg'
 import CarRentalIcon from '../../../../Images/ServiceLogo/kpeg.jpg'
 import BMSIcon from '../../../../Images/ServiceLogo/bms.jpg'
+import Navbar from '../../../Share/Navbar/Navbar';
 
 const KitchenCleaning = () => {
     return (
         <div className='text-justify'>
-            <ServiceNavbar />
+            <Navbar />
             <div className='h-96 mt-1' style={{
                 backgroundImage: `url(${TopBanner})`
             }}>

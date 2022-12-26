@@ -9,12 +9,13 @@ import CleaningServiceIcon from '../../../../Images/ServiceLogo/CleaningService.
 import PestControlIcon from '../../../../Images/ServiceLogo/Pestcontrol.jpg'
 import CarRentalIcon from '../../../../Images/ServiceLogo/kpeg.jpg'
 import BMSIcon from '../../../../Images/ServiceLogo/bms.jpg'
+import Navbar from '../../../Share/Navbar/Navbar';
 
 const BuildingManagementSolution = () => {
     return (
         <div className='text-justify'>
             <div>
-                <ServiceNavbar />
+                <Navbar />
                 <div className='h-96 mt-1' style={{
                     backgroundImage: `url(${TopBanner})`
                 }}>

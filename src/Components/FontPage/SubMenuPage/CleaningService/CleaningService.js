@@ -1,5 +1,4 @@
 import React from 'react';
-import ServiceNavbar from '../../../Share/ServiceNavbar/ServiceNavbar';
 import TopBanner from '../../../../Images/SubMenuPageImg/CleaningServicesCover.jpg'
 import Footer from '../../../Share/Footer/Footer';
 import serviceLogo from '../../../../Images/ServiceLogo/CleaningService.png'
@@ -9,16 +8,17 @@ import CarRentalIcon from '../../../../Images/ServiceLogo/kpeg.jpg'
 import BMSIcon from '../../../../Images/ServiceLogo/bms.jpg'
 import { Link } from 'react-router-dom';
 import { Rating, Stack } from '@mui/material';
+import Navbar from '../../../Share/Navbar/Navbar';
 
 const CleaningService = () => {
     return (
         <div className='text-justify'>
-            <ServiceNavbar />
+            <Navbar />
             <div className='h-96 mt-1' style={{
                 backgroundImage: `url(${TopBanner})`
             }}>
-                <div className='lg:flex justify-between items-center'>
-                    <div className='flex items-baseline'>
+                <div className='lg:flex justify-end items-center'>
+                    <div className='flex items-baseline '>
                         <div>
                             <h1 className='lg:text-4xl md:text-3xl text-2xl font-bold mt-16 lg:mx-28 md:mx-16 mx-5 text-[#1579BE]'>Cleaning Services/Home Cleaning Service</h1>
                         </div>

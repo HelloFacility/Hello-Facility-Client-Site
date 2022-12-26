@@ -1,5 +1,4 @@
 import React from 'react';
-import ServiceNavbar from '../../../Share/ServiceNavbar/ServiceNavbar';
 import TopBanner from '../../../../Images/SubMenuPageImg/CarRentalCover.jpg'
 import Footer from '../../../Share/Footer/Footer';
 import serviceLogo from '../../../../Images/ServiceLogo/CleaningService.png'
@@ -9,11 +8,12 @@ import CleaningServiceIcon from '../../../../Images/ServiceLogo/CleaningService.
 import PestControlIcon from '../../../../Images/ServiceLogo/Pestcontrol.jpg'
 import CarRentalIcon from '../../../../Images/ServiceLogo/kpeg.jpg'
 import BMSIcon from '../../../../Images/ServiceLogo/bms.jpg'
+import Navbar from '../../../Share/Navbar/Navbar';
 
 const CarRental = () => {
     return (
         <div className='text-justify'>
-            <ServiceNavbar />
+            <Navbar />
             <div className='h-96 mt-1' style={{
                 backgroundImage: `url(${TopBanner})`
             }}>
