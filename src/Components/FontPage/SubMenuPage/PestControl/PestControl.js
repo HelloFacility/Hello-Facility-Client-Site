@@ -1,13 +1,13 @@
 import React from 'react';
 import TopBanner from '../../../../Images/SubMenuPageImg/PestControlCover.jpg'
 import CleaningServiceIcon from '../../../../Images/ServiceLogo/CleaningService.jpeg'
-import PestControlIcon from '../../../../Images/ServiceLogo/Pestcontrol.jpg'
+import PestControlIcon from '../../../../Images/SubmenuService/PestControl.webp'
 import CarRentalIcon from '../../../../Images/ServiceLogo/kpeg.jpg'
 import BMSIcon from '../../../../Images/ServiceLogo/bms.jpg'
-import badge from '../../../../Images/SubmenuService/badge.png'
+// import badge from '../../../../Images/SubmenuService/badge.png'
 import { AiFillSafetyCertificate } from 'react-icons/ai';
 import Footer from '../../../Share/Footer/Footer';
-import serviceLogo from '../../../../Images/ServiceLogo/CleaningService.png'
+import serviceLogo from '../../../../Images/SubmenuService/PestControl.webp'
 import { Link } from 'react-router-dom';
 import { Rating, Stack } from '@mui/material';
 import Navbar from '../../../Share/Navbar/Navbar';
@@ -19,10 +19,10 @@ const PestControl = () => {
             <div className='h-96 mt-1' style={{
                 backgroundImage: `url(${TopBanner})`
             }}>
-                <div className='lg:flex md:justify-between items-center'>
+                <div className='lg:flex lg:justify-center md:justify-between items-center'>
                     <div className='flex gap-4 items-baseline'>
                         <div>
-                            <h1 className='lg:text-4xl md:text-3xl text-2xl font-bold mt-16 lg:mx-28 md:mx-16 mx-5 text-[#1579BE]'>Pest Control</h1>
+                            <h1 className='lg:text-4xl md:text-3xl text-2xl font-bold lg:mt-5 mt-16 lg:mx-28 md:mx-16 mx-5 text-[#1579BE]'>Pest Control</h1>
                         </div>
                     </div>
                 </div>

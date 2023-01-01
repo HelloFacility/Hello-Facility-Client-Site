@@ -1,7 +1,7 @@
 import React from 'react';
 import ServiceNavbar from '../../../Share/ServiceNavbar/ServiceNavbar';
 import TopBanner from '../../../../Images/SubMenuPageImg/BuildingManagementSystemCover.jpg'
-import serviceLogo from '../../../../Images/ServiceLogo/CleaningService.png'
+import serviceLogo from '../../../../Images/SubmenuService/BuildingManagement.png'
 import { Link } from 'react-router-dom';
 import { Rating, Stack } from '@mui/material';
 import Footer from '../../../Share/Footer/Footer';
@@ -19,10 +19,10 @@ const BuildingManagementSolution = () => {
                 <div className='h-96 mt-1' style={{
                     backgroundImage: `url(${TopBanner})`
                 }}>
-                    <div className='lg:flex md:justify-between items-center'>
+                    <div className='lg:flex lg:justify-center md:justify-between items-center'>
                         <div className='flex gap-4 items-baseline'>
                             <div>
-                                <h1 className='lg:text-4xl md:text-3xl text-2xl font-bold mt-16 lg:ml-28 md:ml-16 ml-5 text-white'>Building Management System</h1>
+                                <h1 className='lg:text-4xl md:text-3xl text-2xl font-bold lg:mt-5 mt-16 lg:ml-28 md:ml-16 ml-5 text-white'>Building Management System</h1>
                             </div>
                         </div>
                     </div>

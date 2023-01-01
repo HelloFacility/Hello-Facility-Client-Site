@@ -1,7 +1,7 @@
 import React from 'react';
 import TopBanner from '../../../../Images/SubMenuPageImg/CarRentalCover.jpg'
 import Footer from '../../../Share/Footer/Footer';
-import serviceLogo from '../../../../Images/ServiceLogo/CleaningService.png'
+import serviceLogo from '../../../../Images/SubmenuService/carrental.webp'
 import { Link } from 'react-router-dom';
 import { Rating, Stack } from '@mui/material';
 import CleaningServiceIcon from '../../../../Images/ServiceLogo/CleaningService.jpeg'

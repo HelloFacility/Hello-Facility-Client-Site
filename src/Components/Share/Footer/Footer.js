@@ -20,10 +20,10 @@ const Footer = () => {
                                     <Link to='/about'>About Us</Link>
                                 </button>
                                 <button className="text-left text-base hover:text-gray-400 leading-none text-gray-100">
-                                    Our Team
+                                <Link to='/our-team'>Our Team</Link>
                                 </button>
                                 <button className="text-left text-base hover:text-gray-400 leading-none text-gray-100">
-                                    Career
+                                <Link to='/career'>Career</Link>
                                 </button>
                             </div>
                             <div className="sm:w-40 md:w-auto xl:w-72 flex justify-start items-start flex-col space-y-4">
